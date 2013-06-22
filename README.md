@@ -7,7 +7,7 @@
 - The latest version of the report can be found at http://davidrozas.com/pub/Rozas2009d.pdf
 
 
-CD contents:
+Repository contents:
 ============
 
 - Source code of all the bundles developed for this project in folder src.
