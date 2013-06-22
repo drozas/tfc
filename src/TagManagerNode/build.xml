@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="TagManagerNode">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <path id="Execution Environment [Default JRE].libraryclasspath">
+        <pathelement location="C:/Program Files/Java/jre1.6.0_07/lib/resources.jar"/>
+        <pathelement location="C:/Program Files/Java/jre1.6.0_07/lib/rt.jar"/>
+        <pathelement location="C:/Program Files/Java/jre1.6.0_07/lib/jsse.jar"/>
+        <pathelement location="C:/Program Files/Java/jre1.6.0_07/lib/jce.jar"/>
+        <pathelement location="C:/Program Files/Java/jre1.6.0_07/lib/ext/dnsns.jar"/>
+        <pathelement location="C:/Program Files/Java/jre1.6.0_07/lib/ext/sunjce_provider.jar"/>
+        <pathelement location="C:/Program Files/Java/jre1.6.0_07/lib/ext/sunmscapi.jar"/>
+        <pathelement location="C:/Program Files/Java/jre1.6.0_07/lib/ext/sunpkcs11.jar"/>
+    </path>
+    <path id="Framework [Knopflerfish].libraryclasspath">
+        <pathelement location="../../checkout/WP4-tools/persistence/soa2/knopflerfish/knopflerfish.org/osgi/framework.jar"/>
+    </path>
+    <path id="Bundle [PersistencyManager].libraryclasspath">
+        <pathelement location="../../../PersistencyManager"/>
+    </path>
+    <path id="TagManagerNode.classpath">
+        <pathelement location="out"/>
+        <path refid="Execution Environment [Default JRE].libraryclasspath"/>
+        <path refid="Framework [Knopflerfish].libraryclasspath"/>
+        <path refid="Bundle [PersistencyManager].libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="out"/>
+        <copy includeemptydirs="false" todir="out">
+            <fileset dir="src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="out"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="out" source="${source}" target="${target}">
+            <src path="src"/>
+            <include name="**/*.java"/>
+            <exclude name="**/.svn/**"/>
+            <exclude name="**/CVS/**"/>
+            <classpath refid="TagManagerNode.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+    <target description="copy Eclipse compiler jars to ant lib directory" name="init-eclipse-compiler">
+        <copy todir="${ant.library.dir}">
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </copy>
+        <unzip dest="${ant.library.dir}">
+            <patternset includes="jdtCompilerAdapter.jar"/>
+            <fileset dir="${ECLIPSE_HOME}/plugins" includes="org.eclipse.jdt.core_*.jar"/>
+        </unzip>
+    </target>
+    <target description="compile project with Eclipse compiler" name="build-eclipse-compiler">
+        <property name="build.compiler" value="org.eclipse.jdt.core.JDTCompilerAdapter"/>
+        <antcall target="build"/>
+    </target>
+</project>

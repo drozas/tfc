@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-Vendor: ASTRA
+Bundle-ClassPath: ., lib/grouplayout.jar
+Bundle-Version: 2.0.0
+Bundle-Name: ApplicationManager
+Bundle-Activator: eu.ist.astra.am.Activator
+Bundle-SymbolicName: ApplicationManager
+Import-Package: org.osgi.framework, eu.ist.astra.aam, eu.ist.astra.rfm
+ , eu.ist.astra.rfm.proxies, eu.ist.astra.ontologymanager.api, eu.ist.
+ astra.tmn, eu.ist.astra.awarenessmanager, javax.swing;resolution:=optional, javax.swing.ev
+ ent;resolution:=optional, javax.swing.table;resolution:=optional, javax.swing.text;resolution:=optional, javax.swing.text.html;resolution:=optional, java
+ x.swing.tree;resolution:=optional
+

@@ -1,0 +1,17 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.ontologymanager, eu.ist.astra.ontologyman
+ ager.api
+Bundle-ClassPath: ., lib/jena.jar, lib/antlr-2.7.5.jar, lib/arq.jar, l
+ ib/xercesImpl.jar, lib/arq-extra.jar, lib/commons-logging-1.1.1.jar, 
+ lib/concurrent.jar, lib/icu4j_3_4.jar, lib/iri.jar, lib/json.jar, lib
+ /junit.jar, lib/log4j-1.2.12.jar, lib/lucene-core-2.3.1.jar, lib/stax
+ -api-1.0.jar, lib/xml-apis.jar, lib/wstx-asl-3.0.0.jar
+Bundle-Version: 2.0.0
+Bundle-Localization: plugin
+Bundle-Name: OntologyManager
+Bundle-Activator: eu.ist.astra.ontologymanager.impl.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: OntologyManager
+Import-Package: org.osgi.framework
+Build-Date: Tue Aug 18 20:00:42 CEST 2009
+

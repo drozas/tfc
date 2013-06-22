@@ -1,0 +1,20 @@
+Log started 20090904 10:55:49
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:thinking_of_you
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:village,admin@astra,i am going to be in my mother village,2009-08-05 17:03:28.325)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:village
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:village
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(drozas@astra:3Conditions,drozas@astra,application to test the rules description,2009-08-10 10:24:49.071)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities drozas@astra:3Conditions
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application drozas@astra:3Conditions
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(drozas@astra:ApplicationCondition,drozas@astra,Just to show description for InvokeMessage type,2009-08-10 10:24:57.584)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities drozas@astra:ApplicationCondition
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application drozas@astra:ApplicationCondition
+info     20090904 10:55:49 bid#6        - added service RepositoryManager
+info     20090904 10:55:49 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.rm.impl.RepositoryManagerImpl, name=RepositoryManager, allowedMethods=getSharedApplicationName getSharedApplicationOwner getSharedApplicationDescription getSharedApplicationType getSharedApplicationDate isAlreadyShared isSharedInCommunity createSharedApplication deleteSharedApplication shareInCommunity createSharedRule listSharedApplications listSharedRules getXmlData getXmlRule getRuleDescription searchBySimilarity search search
+info     20090904 10:55:49 bid#15       - [20;eu.ist.astra.rm.IRepositoryManager] ServiceEvent REGISTERED
+info     20090904 10:55:49 bid#15       - BundleEvent STARTED
+info     20090904 10:55:49 bid#0        - FrameworkEvent STARTED
+info     20090904 10:55:49 bid#0        - [stdout] Framework launched
+info     20090904 11:26:09 bid#0        - [stdout]  has been performed
+info     20090904 11:26:09 bid#0        - [stdout] 10 applications found. Query performed by drozas@astra
+info     20090904 11:26:09 bid#0        - [stdout] Results filtered (same user) = 0

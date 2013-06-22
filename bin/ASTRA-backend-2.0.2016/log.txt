@@ -1,0 +1,25 @@
+Knopflerfish OSGi framework, version 4.0.0
+Copyright 2003-2006 Knopflerfish. All Rights Reserved.
+
+See http://www.knopflerfish.org for more information.
+No restart xargs file D:\SOA.2.0\DEPLOYMENT\Astra_SOA_Working_Copy\restart.xargs, trying D:\SOA.2.0\DEPLOYMENT\Astra_SOA_Working_Copy\init.xargs instead.
+Loading xargs file D:\SOA.2.0\DEPLOYMENT\Astra_SOA_Working_Copy\init.xargs
+Loading xargs file D:\SOA.2.0\DEPLOYMENT\Astra_SOA_Working_Copy\props.xargs
+Removed existing fwdir D:\SOA.2.0\DEPLOYMENT\Astra_SOA_Working_Copy\fwdir
+Installed and started: file:ASTRA/jsdk/jsdk-2.2.jar (id#1)
+Installed and started: file:ASTRA/cm/cm_all-2.0.0.jar (id#2)
+Installed and started: file:ASTRA/commons-logging/commons-logging_all-2.0.0.jar (id#3)
+Installed and started: file:ASTRA/http/http_all-2.0.0.jar (id#4)
+Installed and started: file:ASTRA/axis-osgi/axis-osgi_all-0.1.0.jar (id#5)
+info     20080710 12:19:57 bid#4        - No configuration present, creating default configuration
+debug    20080710 12:19:57 bid#4        - Updated pid=org.knopflerfish.bundle.http.factory.HttpServer.default
+debug    20080710 12:19:57 bid#4        - create pid=org.knopflerfish.bundle.http.factory.HttpServer.default
+debug    20080710 12:19:57 bid#4        - Creating socket
+info     20080710 12:19:57 bid#4        - HTTP server started on port 8080
+info     20080710 12:19:57 bid#5        - Configuration file read.
+info     20080710 12:19:57 bid#5        - Axis server started.
+info     20080710 12:19:57 bid#4        - org.knopflerfish.bundle.axis.ServicesServlet: init
+debug    20080710 12:19:57 bid#4        - Alias "/axis/services" was registered by bundle 5
+info     20080710 12:19:57 bid#5        - Web application started.
+info     20080710 12:19:57 bid#5        - added service axisadmin
+Framework launched

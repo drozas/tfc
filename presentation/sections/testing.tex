@@ -1,0 +1,104 @@
+\section{Testing}
+
+\begin{frame}
+
+	\frametitle{Testing} 
+	
+	Testing in different levels:
+	
+	\begin{itemize}
+
+        \item Functionalities verification (low and high level): visibility,
+        network is down, extreme cases, etc.
+        \item Different OS compatibility: GNU/Linux, Windows XP, etc.
+        \item Preliminary users evaluation (iterations 1 \& 2):
+        \begin{itemize}
+          \item Performed at NTNU (Trondheim) in December 2008.
+          \item Users were very positive about the idea of sharing/getting
+          applications, about the notion of community, etc.
+          \item Very useful for adding new functionalities in iterations 3 \& 4:
+          searching by criteria, searching by similarity, application
+          adaptation, etc.
+        \end{itemize}
+        \item New user evaluation (including iterations 3 \& 4) is scheduled in
+        October 2009.
+
+	\end{itemize}
+
+\end{frame}
+
+\subsection{Search engine testing (similarity)}
+
+\begin{frame}
+
+	\frametitle{Ex.: search engine testing (similarity)} 
+
+	\begin{itemize}
+	    \item Set of 25 applications, with a description and a set of 4 tags
+	    for each of them.
+	    \item Divided into 5 groups: ``Sport'', ``Social'', ``Feelings'',
+	    ``Cultural'' and ``Location''.
+	    \item We assumed an application can only belong to one of this groups
+	    to make the measuring process simpler, but this introduces an error, since the way an application is categorized is
+		subjective and not exclusive. 
+		\item We calculate precision and recall.
+    \end{itemize}
+    
+    \[precision = (Relevant\phantom{i}docs/Total\phantom{i}retrieved\phantom{i}docs)*100\]
+	\[recall = (Relevant\phantom{i}docs/Existing\phantom{i}relevant\phantom{i}docs)*100\]
+\end{frame}
+
+
+\begin{frame}
+
+\begin{columns}
+
+	\begin{column}{6cm}
+	
+	\begin{itemize}
+		\item Expected values: \\ p = 40\%, r = 80\%.
+		\item Results were quite positive: \\ p = 52\%, r = 96\% \ldots but this is
+		based on artificial data.
+		\item Useful to check design decisions point to the right way and to set
+		guidelines for October's evaluation.
+	\end{itemize}
+		
+	
+	\end{column}
+	
+		\begin{column}{6cm}
+	    
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||c|c|c|c|c|c||}
+
+		\hline \hline
+			Group & RD & RDR & ERD & Precision & Recall \\
+		\hline \hline
+			Sport & 9 & 5 & 5 & 55.56\% & 100\%\\
+			\hline
+			Social & 10 & 5 & 5 & 50\% & 100\%\\
+			\hline
+			Feelings & 10 & 5 & 5 & 50\% & 100\%\\
+			\hline
+			Cultural & 7 & 4 & 5 & 57.14\% & 80\%\\
+			\hline
+			Location & 10 & 5 & 5 & 50\% & 100\%\\
+			\hline
+			\hline
+			Average & 9.2 & 5 & 5 & 52.54\% & 96\%\\
+
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-summary} Summary of the results for search by
+		similarity evaluation}
+	\end{center}
+\end{table}
+	    
+	    \end{column}
+	
+\end{columns}
+
+\end{frame}

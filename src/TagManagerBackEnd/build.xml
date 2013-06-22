@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="TagManagerBackEnd">
+    <property environment="env"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <import file="build.wsdl.xml"/>
+	<path id="Execution Environment [Default JRE].libraryclasspath">
+		        <pathelement location="${env.JAVA_HOME}/lib/resources.jar"/>
+		        <pathelement location="${env.JAVA_HOME}/lib/rt.jar"/>
+		        <pathelement location="${env.JAVA_HOME}/lib/jsse.jar"/>
+		        <pathelement location="${env.JAVA_HOME}/lib/jce.jar"/>
+		        <pathelement location="${env.JAVA_HOME}/lib/ext/dnsns.jar"/>
+		        <pathelement location="${env.JAVA_HOME}/lib/ext/sunjce_provider.jar"/>
+		        <pathelement location="${env.JAVA_HOME}/lib/ext/sunmscapi.jar"/>
+		        <pathelement location="${env.JAVA_HOME}/lib/ext/sunpkcs11.jar"/>
+	</path>
+    <path id="Framework [Knopflerfish].libraryclasspath">
+        <pathelement location="../knopflerfish/knopflerfish.org/osgi/framework.jar"/>
+    </path>
+    <path id="Bundle [PersistencyManager].libraryclasspath">
+        <pathelement location="../../../PersistencyManager"/>
+    </path>
+    <path id="TagManagerBackEnd.classpath">
+        <pathelement location="out"/>
+        <path refid="Execution Environment [Default JRE].libraryclasspath"/>
+        <path refid="Framework [Knopflerfish].libraryclasspath"/>
+        <path refid="Bundle [PersistencyManager].libraryclasspath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="out"/>
+        <copy includeemptydirs="false" todir="out">
+            <fileset dir="src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="out"/>
+    </target>
+    <target depends="clean" name="cleanall"/>
+    <target depends="build-subprojects,build-project,wsdl" name="build"/>
+    <target name="build-subprojects"/>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="out" source="${source}" target="${target}">
+            <src path="src"/>
+            <include name="**/*.java"/>
+            <exclude name="**/.svn/**"/>
+            <exclude name="**/CVS/**"/>
+            <classpath refid="TagManagerBackEnd.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+</project>

@@ -1,0 +1,45 @@
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {1.1}{\ignorespaces ASTRA logo}}{15}{figure.1.1}
+\contentsline {figure}{\numberline {1.2}{\ignorespaces ASTRA applications example}}{16}{figure.1.2}
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Sharing and retrieving applications through the repository}}{17}{figure.1.3}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Spiral model (Boehm, 1988)}}{21}{figure.3.1}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces OSGi layered model}}{26}{figure.3.2}
+\addvspace {10\p@ }
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Repository management use cases}}{34}{figure.4.1}
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Searching use cases}}{37}{figure.4.2}
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Tagging use cases}}{39}{figure.4.3}
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Other general functionalities}}{41}{figure.4.4}
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Relationships between the bundles developed for this project (components diagram)}}{44}{figure.4.5}
+\contentsline {figure}{\numberline {4.6}{\ignorespaces RepositoryManager (components diagram)}}{45}{figure.4.6}
+\contentsline {figure}{\numberline {4.7}{\ignorespaces RepositoryManager (class diagram)}}{51}{figure.4.7}
+\contentsline {figure}{\numberline {4.8}{\ignorespaces RepositoryManager (database model)}}{52}{figure.4.8}
+\contentsline {figure}{\numberline {4.9}{\ignorespaces TagManagerBackEnd (components diagram)}}{54}{figure.4.9}
+\contentsline {figure}{\numberline {4.10}{\ignorespaces TagManagerBackEnd (class diagram)}}{57}{figure.4.10}
+\contentsline {figure}{\numberline {4.11}{\ignorespaces TagManagerNode (components diagram)}}{58}{figure.4.11}
+\contentsline {figure}{\numberline {4.12}{\ignorespaces TagManagerNode (class diagram)}}{60}{figure.4.12}
+\contentsline {figure}{\numberline {4.13}{\ignorespaces ApplicationManager (components diagram)}}{62}{figure.4.13}
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Singleton design pattern}}{63}{figure.4.14}
+\contentsline {figure}{\numberline {4.15}{\ignorespaces ApplicationManager (class diagram)}}{65}{figure.4.15}
+\contentsline {figure}{\numberline {4.16}{\ignorespaces RepositoryManager's activator}}{69}{figure.4.16}
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Bundles priorities configuration}}{70}{figure.4.17}
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Querying the search engine by using the GUI}}{74}{figure.4.18}
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Offering the alternative of adapting the application manually (screenshot)}}{75}{figure.4.19}
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Application adaptation through the GUI (screenshot)}}{75}{figure.4.20}
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Changes in the internal ownership of the rule}}{77}{figure.4.21}
+\contentsline {figure}{\numberline {4.22}{\ignorespaces Creating a rule description from an XML file}}{78}{figure.4.22}
+\contentsline {figure}{\numberline {4.23}{\ignorespaces Interaction with ``My applications'' (screenshot)}}{79}{figure.4.23}
+\contentsline {figure}{\numberline {4.24}{\ignorespaces Adding a tag (screenshot)}}{80}{figure.4.24}
+\contentsline {figure}{\numberline {4.25}{\ignorespaces Sharing an application (screenshot)}}{81}{figure.4.25}
+\contentsline {figure}{\numberline {4.26}{\ignorespaces Browsing the repository (screenshot)}}{82}{figure.4.26}
+\contentsline {figure}{\numberline {4.27}{\ignorespaces Searching an application by criteria (screenshot)}}{82}{figure.4.27}
+\contentsline {figure}{\numberline {4.28}{\ignorespaces Searching an application by similarity (screenshot)}}{83}{figure.4.28}
+\contentsline {figure}{\numberline {4.29}{\ignorespaces Retrieving and adapting an application from the repository (screenshot)}}{83}{figure.4.29}
+\contentsline {figure}{\numberline {4.30}{\ignorespaces ApplicationManager running in GNU/Linux and Windows XP simultaneously}}{85}{figure.4.30}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

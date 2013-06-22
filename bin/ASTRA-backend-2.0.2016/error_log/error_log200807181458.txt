@@ -1,0 +1,6 @@
+Jul 18, 2008 2:58:39 PM eu.ist.astra.cm.impl.Activator start
+INFO: Community Manager has started.
+Jul 18, 2008 2:58:40 PM eu.ist.astra.cm.CommunityManagerFacade createInstance
+INFO: New community instance created: URI: tag:com_Club_de_amigos_de_cagar_en_alto,Club_de_amigos_de_cagar_en_alto Name: Club_de_amigos_de_cagar_en_alto Owner: org.ubicollab.cim.ci.members.Member@d81784
+Jul 18, 2008 2:58:40 PM eu.ist.astra.cm.CommunityManagerFacade createInstance
+INFO: New community instance created: URI: tag:com_KnoplerFiske_fans!,KnoplerFiske_fans! Name: KnoplerFiske_fans! Owner: org.ubicollab.cim.ci.members.Member@1bb60c3

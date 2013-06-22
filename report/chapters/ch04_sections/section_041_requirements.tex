@@ -1,0 +1,98 @@
+%%%%%%%%%%%%%%% Requirements %%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Requirements}
+\label{sec:requirements}
+
+In this section we will describe shortly the requirements that we gathered
+during the several requirements elicitation processes performed during all the
+iterations (see Table \ref{table:iterations}). 
+It is interesting to remark that this process becomes even more important (and
+challenging) in projects of a researching nature like ASTRA, due to the
+continuous rise of requirements implicit in its kind.
+
+Tables \ref{table:functional-requirements} and
+\ref{table:non-functional-requirements} summarize the most important functional
+and non functional requirements that we gathered respectively.
+%%Functional requirements
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l||}
+		\hline \hline
+		\multicolumn{2}{||c||}{\bfseries{Functional requirements}} \\
+		\hline \hline
+			1. & Create a repository to store awareness applications. \\
+			\hline
+			2. & The information to share can be customized by the user before being
+			stored.\\
+			\hline
+			3. & The repository has to take into account the visibility of the
+			applications\\
+			   & in terms of communities.\\
+			\hline
+			4. & It is necessary to offer functionalities to browse the repository
+			by communities.\\
+			\hline
+		 	5. & It is necessary to create a mechanism to search applications by
+		 	different \\
+		 	  & criteria (tags, description, type or any).	\\
+			\hline
+		 	6. & It is necessary to create a mechanism to recommend applications 
+		 	based \\
+		 	 & on the similarity with respect to another application.\\
+			\hline
+		 	7. & During the appropriation of an application, it is necessary to
+		 	offer \\
+		 	& the user the possibility of customizing the application (i.e.:
+		 	choosing the rules).\\
+		 	\hline
+		 	8. & Create a mechanism to obtain a ``human readable'' description of a
+		 	rule.\\
+		 	\hline
+		 	9. & Create a system which allows us to tag applications choosing the
+		 	visibility:\\
+		 	& public, communities or private.\\
+			\hline
+		 	10. & Create a GUI which allows the interaction with the repository 
+		 	and perform \\
+		 	& common operations (logging in, showing help, etc.).\\
+		 	
+		
+		\hline \hline
+		\end{tabular}
+		\caption{\label{table:functional-requirements}Functional requirements}
+	\end{center}
+\end{table}
+
+
+%%Non-Functional requirements
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l||}
+		\hline \hline
+		\multicolumn{2}{||c||}{\bfseries{Non functional requirements}} \\
+		\hline \hline
+			1. & The functionalities have to be offered by OSGi bundles through
+			their  \\
+			& web services interfaces. \\
+			\hline
+			2. & The system has to perform the retrieving process as transparent
+			 as possible \\
+			& for the user. \\
+			\hline
+			3. & All the components have to be multiplatform. \\
+			\hline
+			4. & The GUI has to be intuitive.\\
+			\hline
+			5. & The GUI has to be easy to connect to other bundles in the future.\\
+			\hline
+		 	6. & It is necessary to study the possibility of using ontology services
+		 	provided\\
+		 	& by \verb|OntologyManager| in order to improve the performance of some\\
+		 	& of the functionalities (i.e.: application adaptation).\\
+		
+		\hline \hline
+		\end{tabular}
+		\caption{\label{table:non-functional-requirements}Non functional requirements}
+	\end{center}
+\end{table}

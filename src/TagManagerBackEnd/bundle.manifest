@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.tmbe
+Bundle-Vendor: Astra
+Bundle-ClassPath: .
+Bundle-Version: 2.0.0
+Bundle-Name: TagManagerBackEnd
+Bundle-Activator: eu.ist.astra.tmbe.impl.Activator
+Bundle-SymbolicName: TagManagerBackEnd
+Import-Package: org.osgi.framework, eu.ist.astra.persistency, eu.ist.a
+ stra.cm, eu.ist.astra.em, eu.ist.astra.em.events
+Bundle-ManifestVersion: 2
+

@@ -1,0 +1,3 @@
+- Problema para centrar nombre de tutoras en portada.
+- Como hacer /pauses en un índice?
+- Diferente color en transpas que llevan imagen

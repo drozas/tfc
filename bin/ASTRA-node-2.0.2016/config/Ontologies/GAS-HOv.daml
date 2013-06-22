@@ -1,0 +1,61 @@
+<rdf:RDF 
+	xmlns:eGadgets16="http://eGadgets16#" 
+	xmlns="http://eGadgets16#" 
+	xmlns:daml_oil="http://www.daml.org/2001/03/daml+oil#" 
+	xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+	xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" 
+	xmlns:XMLSchema="http://www.w3.org/2000/10/XMLSchema#">
+
+<daml_oil:Ontology rdf:ID="">
+	<daml_oil:versionInfo></daml_oil:versionInfo>
+	<rdfs:comment></rdfs:comment>
+</daml_oil:Ontology>
+
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+<!-- Synapses data -->
+
+<Synapse rdf:ID="eCarpet-eLamp">
+	<SynapseID>
+		<XMLSchema:integer><rdf:value>1</rdf:value></XMLSchema:integer>
+	</SynapseID>
+	<SynapsePlugs rdf:resource="#luminosityPlug" />
+	<SynapsePlugs rdf:resource="#weightPlug" />
+</Synapse>
+
+<SPlug rdf:ID="weightPlug">
+	<PlugID>
+		<XMLSchema:integer><rdf:value>weightPlugID</rdf:value></XMLSchema:integer>
+	</PlugID>
+	<PlugOwner rdf:resource="#eCarpet" />
+	<eGtID>
+		<XMLSchema:string><rdf:value>ECarpet@1048680321936</rdf:value></XMLSchema:string>
+	</eGtID>
+	<Documentation>
+		<XMLSchema:string><rdf:value>The plug weightPlug provides service WeightS with the following attributes:</rdf:value></XMLSchema:string>
+	</Documentation>
+	<Services rdf:resource="#eGadgets16_00147" />
+</SPlug>
+
+<WeightS rdf:ID="eGadgets16_00147">
+</WeightS>
+
+<!-- /Synapses data -->
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+<!-- GadgetWorlds data -->
+
+<GadgetWorld rdf:ID="first">
+	<GWID>
+		<XMLSchema:integer><rdf:value>1</rdf:value></XMLSchema:integer>
+	</GWID>
+	<eGadgets rdf:resource="#eBook" />
+	<eGadgets rdf:resource="#eCarpet" />
+	<eGadgets rdf:resource="#eLamp" />
+	<Synapses rdf:resource="#eCarpet-eLamp" />
+</GadgetWorld>
+
+<!-- /GadgetWorlds data -->
+<!-- # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # # -->
+
+</rdf:RDF>

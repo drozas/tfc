@@ -1,0 +1,45 @@
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {3.1}{\ignorespaces Iterations during the project}}{21}{table.3.1}
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {4.1}{\ignorespaces Functional requirements}}{33}{table.4.1}
+\contentsline {table}{\numberline {4.2}{\ignorespaces Non functional requirements}}{33}{table.4.2}
+\contentsline {table}{\numberline {4.3}{\ignorespaces Browse applications - general scenario description}}{35}{table.4.3}
+\contentsline {table}{\numberline {4.4}{\ignorespaces Share application - general scenario description}}{35}{table.4.4}
+\contentsline {table}{\numberline {4.5}{\ignorespaces Retrieve application - general scenario description}}{36}{table.4.5}
+\contentsline {table}{\numberline {4.6}{\ignorespaces Search by criteria - general scenario description}}{37}{table.4.6}
+\contentsline {table}{\numberline {4.7}{\ignorespaces Search by similarity - general scenario description}}{38}{table.4.7}
+\contentsline {table}{\numberline {4.8}{\ignorespaces Add tag - general scenario description}}{40}{table.4.8}
+\contentsline {table}{\numberline {4.9}{\ignorespaces Remove tag - general scenario description}}{40}{table.4.9}
+\contentsline {table}{\numberline {4.10}{\ignorespaces Logging in - general scenario description}}{41}{table.4.10}
+\contentsline {table}{\numberline {4.11}{\ignorespaces Logging out - general scenario description}}{42}{table.4.11}
+\contentsline {table}{\numberline {4.12}{\ignorespaces Look up help - general scenario description}}{42}{table.4.12}
+\contentsline {table}{\numberline {4.13}{\ignorespaces RepositoryManager interface}}{46}{table.4.13}
+\contentsline {table}{\numberline {4.14}{\ignorespaces RepositoryManager interface (II)}}{47}{table.4.14}
+\contentsline {table}{\numberline {4.15}{\ignorespaces RepositoryManager interface (III)}}{48}{table.4.15}
+\contentsline {table}{\numberline {4.16}{\ignorespaces RepositoryManager interface (IV)}}{49}{table.4.16}
+\contentsline {table}{\numberline {4.17}{\ignorespaces TagManagerBackEnd interface}}{55}{table.4.17}
+\contentsline {table}{\numberline {4.18}{\ignorespaces TagManagerBackEnd interface (II)}}{56}{table.4.18}
+\contentsline {table}{\numberline {4.19}{\ignorespaces TagManagerNode interface}}{59}{table.4.19}
+\contentsline {table}{\numberline {4.20}{\ignorespaces Types of field storage options in Lucene}}{72}{table.4.20}
+\contentsline {table}{\numberline {4.21}{\ignorespaces Types of field indexation in Lucene}}{72}{table.4.21}
+\contentsline {table}{\numberline {4.22}{\ignorespaces Fields used by RepositoryManager's search engine index}}{73}{table.4.22}
+\contentsline {table}{\numberline {4.23}{\ignorespaces Matching affected fields in querying by criteria}}{73}{table.4.23}
+\contentsline {table}{\numberline {4.24}{\ignorespaces Summary of the results for search by similarity evaluation}}{87}{table.4.24}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\contentsline {table}{\numberline {B.1}{\ignorespaces Search by similarity evaluation - raw data (sport)}}{97}{table.B.1}
+\contentsline {table}{\numberline {B.2}{\ignorespaces Search by similarity evaluation - raw data (social)}}{97}{table.B.2}
+\contentsline {table}{\numberline {B.3}{\ignorespaces Search by similarity evaluation - raw data (feelings)}}{98}{table.B.3}
+\contentsline {table}{\numberline {B.4}{\ignorespaces Search by similarity evaluation - raw data (cultural)}}{98}{table.B.4}
+\contentsline {table}{\numberline {B.5}{\ignorespaces Search by similarity evaluation - raw data (location)}}{98}{table.B.5}
+\contentsline {table}{\numberline {B.6}{\ignorespaces Search by similarity evaluation - results for group ``Sport''}}{98}{table.B.6}
+\contentsline {table}{\numberline {B.7}{\ignorespaces Search by similarity evaluation - results for group ``Social''}}{99}{table.B.7}
+\contentsline {table}{\numberline {B.8}{\ignorespaces Search by similarity evaluation - results for group ``Feelings''}}{99}{table.B.8}
+\contentsline {table}{\numberline {B.9}{\ignorespaces Search by similarity evaluation - results for group ``Cultural''}}{99}{table.B.9}
+\contentsline {table}{\numberline {B.10}{\ignorespaces Search by similarity evaluation - results for group ``Location''}}{99}{table.B.10}
+\addvspace {10\p@ }
+\addvspace {10\p@ }
+\addvspace {10\p@ }

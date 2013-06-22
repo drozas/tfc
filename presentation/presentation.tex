@@ -1,0 +1,66 @@
+%%This is a very basic article template.
+%%There is just one section and two subsections.
+\documentclass{beamer}
+%\usepackage[pdftex]{graphicx}
+\usepackage[latin1]{inputenc}
+%\usepackage[spanish]{babel}
+\usepackage{color}
+\usetheme{Antibes}
+\beamersetuncovermixins{\opaqueness<1>{25}}{\opaqueness<2->{15}}
+\usepackage{graphicx}
+
+
+%%To add bookmarks
+\usepackage[bookmarks=true]{hyperref}
+
+\title{Development and integration of an awareness applications manager
+into ASTRA}
+\subtitle{Presentación de Proyecto de Fin de Carrera}
+\author{David Rozas Domingo}
+%% TODO: Use proper command and align to right
+
+\date{ Tutoras: \\ Soto Montalvo (Universidad Rey Juan Carlos)\\ Monica
+Divitini (Norges Teknisk-Naturvitenskapelige Universitet)}
+
+
+\begin{document}
+
+
+
+
+
+
+\maketitle
+\begin{frame}
+%%\frametitle{Index} 
+\tableofcontents
+\end{frame}
+
+
+
+\input{sections/introduction}
+
+\input{sections/objectives}
+
+\input{sections/methodology}
+
+\input{sections/design}
+
+\input{sections/implementation}
+
+\input{sections/testing}
+
+\input{sections/demo}
+
+\input{sections/coordination}
+
+\input{sections/conclusions}
+
+
+\begin{frame}
+	\begin{figure}
+	 	\includegraphics[scale=0.65]{img/thanks.png}
+	\end{figure}
+\end{frame}
+
+\end{document}

@@ -1,0 +1,18 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.rm,eu.ist.astra.rm.impl
+Bundle-Vendor: IST ASTRA
+Bundle-ClassPath: ., lib/lucene-2_4_1_svn.jar
+Bundle-Version: 2.0.0
+Bundle-Name: RepositoryManager
+Bundle-Activator: eu.ist.astra.rm.impl.Activator
+Bundle-Description: Repository Manager bundle which manages the sharin
+ g process in the back-end
+Bundle-SymbolicName: RepositoryManager
+Import-Package: org.osgi.framework, eu.ist.astra.persistency, eu.ist.a
+ stra.cm, eu.ist.astra.tmbe, eu.ist.astra.em, eu.ist.astra.em.events, 
+ javax.xml.parsers;resolution:=optional, javax.xml.transform;resolutio
+ n:=optional, javax.xml.transform.dom;resolution:=optional, javax.xml.
+ transform.stream;resolution:=optional, org.w3c.dom;resolution:=option
+ al
+Build-Date: Tue Aug 18 20:01:09 CEST 2009
+

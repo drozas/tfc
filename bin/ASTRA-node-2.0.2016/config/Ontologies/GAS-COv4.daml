@@ -1,0 +1,407 @@
+<rdf:RDF 
+  xmlns:XMLSchema ="http://www.w3.org/2000/10/XMLSchema#" xmlns:eGadgets16 ="http://eGadgets16#" xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:daml_oil ="http://www.daml.org/2001/03/daml+oil#" xmlns:rdfs ="http://www.w3.org/2000/01/rdf-schema#" xmlns ="http://eGadgets16#">
+
+
+<!-- Assistant Classes -->
+
+<daml_oil:Class rdf:ID="CommunicationUnit">   
+</daml_oil:Class>
+<daml_oil:Class rdf:ID="Infrared">   
+  <rdfs:subClassOf rdf:resource="#CommunicationUnit"/>
+</daml_oil:Class>
+<daml_oil:Class rdf:ID="Cable">   
+  <rdfs:subClassOf rdf:resource="#CommunicationUnit"/>
+</daml_oil:Class>
+<daml_oil:Class rdf:ID="Wireless">   
+  <rdfs:subClassOf rdf:resource="#CommunicationUnit"/>
+</daml_oil:Class>
+ 
+<daml_oil:Class rdf:ID="ProcessingUnit">   
+</daml_oil:Class>
+
+<daml_oil:Class rdf:ID="MemoryUnit">   
+</daml_oil:Class>
+ 
+<daml_oil:Class rdf:ID="Actuator">   
+</daml_oil:Class> 
+
+<daml_oil:Class rdf:ID="Button">   
+</daml_oil:Class> 
+  
+<daml_oil:Class rdf:ID="Sensor">   
+</daml_oil:Class>
+ 
+<daml_oil:Class rdf:ID="Switch">   
+</daml_oil:Class>
+ 
+<daml_oil:Class rdf:ID="Screen">   
+</daml_oil:Class>
+
+<daml_oil:DatatypeProperty rdf:ID="Data_type">   
+  <daml_oil:domain rdf:resource="#Actuator"/>
+  <daml_oil:domain rdf:resource="#Sensor"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+ 
+
+
+<!-- End of assistant classes -->
+
+
+<!-- Assistant properties -->
+
+<daml_oil:DatatypeProperty rdf:ID="Documentation">   
+  <daml_oil:domain rdf:resource="#eGadget"/>
+  <daml_oil:domain rdf:resource="#Plug"/>
+  <daml_oil:domain rdf:resource="#Synapse"/>
+  <daml_oil:domain rdf:resource="#Service"/>
+  <daml_oil:domain rdf:resource="#GadgetWorld"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+
+
+<!-- end of Assistant properties -->
+
+
+
+<!-- eGadget Class -->
+
+<daml_oil:Class rdf:ID="eGadget">   
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>	<daml_oil:cardinality>1</daml_oil:cardinality>       
+      <daml_oil:onProperty rdf:resource="#eGtID"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>	<daml_oil:cardinality>1</daml_oil:cardinality>       
+      <daml_oil:onProperty rdf:resource="#_TPlug"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+</daml_oil:Class>
+
+<daml_oil:DatatypeProperty rdf:ID="eGtID">   
+  <daml_oil:domain rdf:resource="#eGadget"/>
+  <daml_oil:domain rdf:resource="#Plug"/>
+  <rdf:type rdf:resource="http://www.daml.org/2001/03/daml+oil#UniqueProperty"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+
+<daml_oil:ObjectProperty rdf:ID="_TPlug">   
+  <daml_oil:range rdf:resource="#TPlug"/>
+  <daml_oil:domain rdf:resource="#eGadget"/>
+</daml_oil:ObjectProperty>
+ 
+<daml_oil:ObjectProperty rdf:ID="_SPlug">   
+  <daml_oil:range rdf:resource="#SPlug"/>
+  <daml_oil:domain rdf:resource="#eGadget"/>
+</daml_oil:ObjectProperty>
+
+<!-- end of eGadget class -->
+
+
+<!-- Plug Class -->
+
+<daml_oil:Class rdf:ID="Plug">   
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>	<daml_oil:cardinality>1</daml_oil:cardinality>       
+      <daml_oil:onProperty rdf:resource="#PlugID"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>      <daml_oil:cardinality>1</daml_oil:cardinality>       
+      <daml_oil:onProperty rdf:resource="#PlugOwner"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+</daml_oil:Class>
+
+<daml_oil:ObjectProperty rdf:ID="PlugOwner">   
+  <daml_oil:domain rdf:resource="#Plug"/>
+  <daml_oil:range rdf:resource="#eGadget"/>
+  <rdf:type rdf:resource="http://www.daml.org/2001/03/daml+oil#UniqueProperty"/>
+</daml_oil:ObjectProperty>
+  
+<daml_oil:DatatypeProperty rdf:ID="PlugID">   
+  <daml_oil:domain rdf:resource="#Plug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+
+<!-- TPlug a subclass of Plug -->
+
+<daml_oil:Class rdf:ID="TPlug">   
+  <rdfs:comment>It represents eGt' s physical properties and digital attributes        </rdfs:comment>
+  <rdfs:subClassOf rdf:resource="#Plug"/>
+</daml_oil:Class>
+ 
+<daml_oil:DatatypeProperty rdf:ID="Form">   
+  <daml_oil:domain rdf:resource="#TPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+ 
+<daml_oil:DatatypeProperty rdf:ID="Width">   
+  <daml_oil:domain rdf:resource="#TPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger"/>
+</daml_oil:DatatypeProperty>
+<daml_oil:ObjectProperty rdf:ID="Communication">   
+  <daml_oil:range rdf:resource="#CommunicationUnit"/>
+  <daml_oil:domain rdf:resource="#TPlug"/>
+</daml_oil:ObjectProperty>
+<daml_oil:ObjectProperty rdf:ID="_Sensor">   
+  <daml_oil:range rdf:resource="#Sensor"/>
+  <daml_oil:domain rdf:resource="#TPlug"/>
+</daml_oil:ObjectProperty>
+<daml_oil:ObjectProperty rdf:ID="_Button">   
+  <daml_oil:range rdf:resource="#Button"/>
+  <daml_oil:domain rdf:resource="#TPlug"/>
+</daml_oil:ObjectProperty>
+
+<daml_oil:ObjectProperty rdf:ID="Processor">   
+  <daml_oil:range rdf:resource="#ProcessingUnit"/>
+  <daml_oil:domain rdf:resource="#TPlug"/>
+</daml_oil:ObjectProperty>
+<daml_oil:ObjectProperty rdf:ID="Memory">   
+  <daml_oil:range rdf:resource="#MemoryUnit"/>
+  <daml_oil:domain rdf:resource="#TPlug"/>
+</daml_oil:ObjectProperty>
+<daml_oil:ObjectProperty rdf:ID="_Actuator">   
+  <daml_oil:range rdf:resource="#Actuator"/>
+  <daml_oil:domain rdf:resource="#TPlug"/>
+</daml_oil:ObjectProperty>
+ 
+<daml_oil:DatatypeProperty rdf:ID="Length">   
+  <daml_oil:domain rdf:resource="#TPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger"/>
+</daml_oil:DatatypeProperty>
+<daml_oil:DatatypeProperty rdf:ID="Height">   
+  <daml_oil:domain rdf:resource="#TPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger"/>
+</daml_oil:DatatypeProperty>
+<daml_oil:DatatypeProperty rdf:ID="Weight">   
+  <daml_oil:domain rdf:resource="#TPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#nonNegativeInteger"/>
+</daml_oil:DatatypeProperty>
+<daml_oil:ObjectProperty rdf:ID="_Screen">   
+  <daml_oil:range rdf:resource="#Screen"/>
+  <daml_oil:domain rdf:resource="#TPlug"/>
+</daml_oil:ObjectProperty>
+<daml_oil:DatatypeProperty rdf:ID="Material">   
+  <daml_oil:domain rdf:resource="#TPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+ 
+<daml_oil:ObjectProperty rdf:ID="_Switch">   
+  <daml_oil:range rdf:resource="#Switch"/>
+  <daml_oil:domain rdf:resource="#TPlug"/>
+</daml_oil:ObjectProperty>
+<daml_oil:DatatypeProperty rdf:ID="Colour">   
+  <daml_oil:domain rdf:resource="#TPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#integer"/>
+</daml_oil:DatatypeProperty>
+ 
+<daml_oil:DatatypeProperty rdf:ID="Shape">   
+  <daml_oil:domain rdf:resource="#TPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+ 
+
+<!-- end of TPlug subclass -->
+
+
+<!-- SPlug a subclass of Plug -->
+
+<daml_oil:Class rdf:ID="SPlug">  <rdfs:comment>It represents a service / capability offered by an eGadget</rdfs:comment>   
+  <rdfs:subClassOf rdf:resource="#Plug"/>
+</daml_oil:Class>
+
+
+<daml_oil:DatatypeProperty rdf:ID="PlugState">   
+  <daml_oil:domain rdf:resource="#SPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#boolean"/>
+</daml_oil:DatatypeProperty>
+<daml_oil:DatatypeProperty rdf:ID="PlugRole">   
+  <daml_oil:domain rdf:resource="#SPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#integer"/>
+</daml_oil:DatatypeProperty>
+<daml_oil:ObjectProperty rdf:ID="PlugConnections">   
+  <daml_oil:range rdf:resource="#PlugDescriptor"/>
+  <daml_oil:domain rdf:resource="#SPlug"/>
+</daml_oil:ObjectProperty>
+<daml_oil:ObjectProperty rdf:ID="Services">   
+  <daml_oil:domain rdf:resource="#SPlug"/>
+  <daml_oil:range rdf:resource="#Service"/>
+</daml_oil:ObjectProperty>
+ 
+<daml_oil:DatatypeProperty rdf:ID="PlugImportance">   
+  <daml_oil:domain rdf:resource="#SPlug"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#boolean"/>
+</daml_oil:DatatypeProperty>
+
+<!-- end of SPlug subclass -->
+
+
+<!-- end of Plug class -->
+
+
+
+
+<!-- Synapse class -->
+
+<daml_oil:Class rdf:ID="Synapse">   
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>      <daml_oil:cardinality>1</daml_oil:cardinality>       
+      <daml_oil:onProperty rdf:resource="#SynapseID"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>      <daml_oil:cardinality>2</daml_oil:cardinality>       
+      <daml_oil:onProperty rdf:resource="#SynapsePlugs"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+</daml_oil:Class>
+
+
+<daml_oil:ObjectProperty rdf:ID="SynapsePlugs">   
+  <daml_oil:range rdf:resource="#SPlug"/>
+  <daml_oil:domain rdf:resource="#Synapse"/>
+</daml_oil:ObjectProperty>
+<daml_oil:DatatypeProperty rdf:ID="SynapseID">   
+  <daml_oil:domain rdf:resource="#Synapse"/>
+  <rdf:type rdf:resource="http://www.daml.org/2001/03/daml+oil#UniqueProperty"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+ 
+
+<!-- end of Synapse class -->
+
+
+
+<!-- Service class -->
+
+<daml_oil:Class rdf:ID="Service">   
+</daml_oil:Class>
+
+<!-- Services' subclasses -->
+
+<daml_oil:Class rdf:ID="On_Off">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+
+<daml_oil:Class rdf:ID="Tuner">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+
+
+
+<daml_oil:Class rdf:ID="Location">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+
+
+<daml_oil:Class rdf:ID="Thermic">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+<daml_oil:DatatypeProperty rdf:ID="TemperatureS">   
+  <daml_oil:domain rdf:resource="#Thermic"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+
+<daml_oil:Class rdf:ID="Gravity">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+<daml_oil:Class rdf:ID="WeightS">   
+  <rdfs:subClassOf rdf:resource="#Gravity"/>
+</daml_oil:Class>
+
+<daml_oil:Class rdf:ID="Optic">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+<daml_oil:Class rdf:ID="Light">   
+  <rdfs:subClassOf rdf:resource="#Optic"/>
+</daml_oil:Class>
+<daml_oil:DatatypeProperty rdf:ID="ColourS">   
+  <daml_oil:domain rdf:resource="#Light"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+<daml_oil:DatatypeProperty rdf:ID="LuminocityS">   
+  <daml_oil:domain rdf:resource="#Light"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+<daml_oil:Class rdf:ID="Image">   
+  <rdfs:subClassOf rdf:resource="#Optic"/>
+</daml_oil:Class>
+
+<daml_oil:Class rdf:ID="Kinetic">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+<daml_oil:Class rdf:ID="FrequencyS">   
+  <rdfs:subClassOf rdf:resource="#Kinetic"/>
+</daml_oil:Class>
+
+<daml_oil:Class rdf:ID="Sonic">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+<daml_oil:Class rdf:ID="Music">   
+  <rdfs:subClassOf rdf:resource="#Sonic"/>
+</daml_oil:Class>
+<daml_oil:DatatypeProperty rdf:ID="GenreS">   
+  <daml_oil:domain rdf:resource="#Music"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+ 
+<daml_oil:Class rdf:ID="Electromagnetic">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+ 
+<daml_oil:Class rdf:ID="Electric">   
+  <rdfs:subClassOf rdf:resource="#Service"/>
+</daml_oil:Class>
+ 
+
+
+
+<!-- end of Service class -->
+
+
+
+
+<!-- GadgetWorld class -->
+
+<daml_oil:Class rdf:ID="GadgetWorld">   
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>      <daml_oil:cardinality>1</daml_oil:cardinality>       
+      <daml_oil:onProperty rdf:resource="#GWID"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>      <daml_oil:minCardinality>2</daml_oil:minCardinality>       
+      <daml_oil:onProperty rdf:resource="#eGadgets"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+  <rdfs:subClassOf>
+    <daml_oil:Restriction>      <daml_oil:minCardinality>1</daml_oil:minCardinality>       
+      <daml_oil:onProperty rdf:resource="#Synapses"/>
+    </daml_oil:Restriction>
+  </rdfs:subClassOf>
+</daml_oil:Class>
+
+<daml_oil:ObjectProperty rdf:ID="eGadgets">   
+  <daml_oil:domain rdf:resource="#GadgetWorld"/>
+  <daml_oil:range rdf:resource="#eGadget"/>
+</daml_oil:ObjectProperty>
+
+<daml_oil:DatatypeProperty rdf:ID="GWID">   
+  <daml_oil:domain rdf:resource="#GadgetWorld"/>
+  <daml_oil:domain rdf:resource="#eGadget"/>
+  <daml_oil:range rdf:resource="http://www.w3.org/2000/10/XMLSchema#string"/>
+</daml_oil:DatatypeProperty>
+ 
+<daml_oil:ObjectProperty rdf:ID="Synapses">   
+  <daml_oil:domain rdf:resource="#GadgetWorld"/>
+  <daml_oil:range rdf:resource="#Synapse"/>
+</daml_oil:ObjectProperty>
+
+<!-- end of GadgetWorld  class -->
+ 
+<daml_oil:Ontology rdf:ID="GAS-Ontology">  <daml_oil:versionInfo>v4</daml_oil:versionInfo>  <rdfs:comment></rdfs:comment>   
+</daml_oil:Ontology>
+ 
+</rdf:RDF>

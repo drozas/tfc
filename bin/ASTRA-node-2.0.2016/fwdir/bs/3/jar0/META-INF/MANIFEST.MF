@@ -1,0 +1,30 @@
+Manifest-Version: 1.0
+Export-Package: org.osgi.service.log;specification-version=1.2,org.kno
+ pflerfish.service.log;specification-version=1.1,org.apache.commons.lo
+ gging;specification-version=1.0.3
+Bundle-Classpath: .,log_api-2.0.0.jar
+Bundle-Category: lib
+Bundle-Name: Commons-Logging
+Created-By: 1.4.2_02-b03 (Sun Microsystems Inc.)
+Build-Date: Thu November 30 2006, 16:36:03
+Ant-Version: Apache Ant 1.6.2
+Bundle-Vendor: Knopflerfish
+Bundle-SubversionURL: https://www.knopflerfish.org/svn/knopflerfish.or
+ g/trunk/osgi/bundles_opt/commons-logging/
+Bundle-ContactAddress: http://www.knopflerfish.orgB
+Bundle-Version: 2.0.0
+Built-From: C:\cygwin\home\bjorna\svn\knopflerfish\trunk_clean\trunk\o
+ sgi\bundles_opt\commons-logging
+Bundle-Activator: org.knopflerfish.bundle.commons.logging.Activator
+Bundle-ManifestVersion: 2
+Bundle-APIVendor: Knopflerfish/Apache
+Bundle-Description: Apache Commons logging. Publishced under Apache Li
+ cense. See http://www.apache.org/licenses/LICENSE-2.0
+Import-Package: org.osgi.framework,org.osgi.service.log;specification-
+ version=1.2,org.knopflerfish.service.log;specification-version=1.1,or
+ g.apache.commons.logging;specification-version=1.0.3
+Bundle-SymbolicName: org.knopflerfish.bundle.commons-logging
+Bundle-DocURL: https://www.knopflerfish.org/svn/knopflerfish.org/trunk
+ /osgi/bundles_opt/commons-logging/readme.txt
+Bundle-UUID: org.knopflerfish:commons-logging:2.0.0
+

@@ -1,0 +1,18 @@
+\BOOKMARK [2][]{Outline0.1}{Introduction}{}
+\BOOKMARK [2][]{Outline0.2}{Objectives}{}
+\BOOKMARK [2][]{Outline0.3}{Methodology \046 involved technologies}{}
+\BOOKMARK [3][]{Outline0.3.1.9}{Methodology}{Outline0.3}
+\BOOKMARK [3][]{Outline0.3.2.10}{Involved technologies}{Outline0.3}
+\BOOKMARK [2][]{Outline0.4}{Design}{}
+\BOOKMARK [3][]{Outline0.4.1.17}{RepositoryManager}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.2.21}{TagManagerBackEnd}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.3.24}{TagManagerNode}{Outline0.4}
+\BOOKMARK [3][]{Outline0.4.4.25}{ApplicationManager}{Outline0.4}
+\BOOKMARK [2][]{Outline0.5}{Implementation}{}
+\BOOKMARK [3][]{Outline0.5.1.31}{Search engine}{Outline0.5}
+\BOOKMARK [3][]{Outline0.5.2.33}{Application adaptation \046 rules description creation}{Outline0.5}
+\BOOKMARK [2][]{Outline0.6}{Testing}{}
+\BOOKMARK [3][]{Outline0.6.1.36}{Search engine testing \(similarity\)}{Outline0.6}
+\BOOKMARK [2][]{Outline0.7}{Demonstration}{}
+\BOOKMARK [2][]{Outline0.8}{Coordination}{}
+\BOOKMARK [2][]{Outline0.9}{Conclusions \046 future work}{}

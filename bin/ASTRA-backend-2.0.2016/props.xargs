@@ -1,0 +1,69 @@
+#
+# Properties used by both init.xargs and restart.xargs
+#
+
+# The Service Platform ID should be used by bundles needing to
+# a unique ID for the platform itself
+-Dorg.osgi.provisioning.spid=knopflerfish
+
+# Initial startup verbosity, 0 is low verbosity
+-Dorg.knopflerfish.verbosity=0
+
+# Security
+#-Djava.security.manager=
+#-Djava.security.policy=file:framework.policy
+
+#drozas&alfredo: path where the persistency manager get the database config file:
+#INFO: There is one different database for each process (node and back-end).
+#The db configuration file is into the persistency bundle (.jar), and the default values for the back-end are:
+#db.props (BACK-END): 
+#host=localhost
+#port=3306
+#db=ASTRASERVER
+#user=ASTRASERVER
+#password=ASTRASERVER
+#A database and user with permissions on it must be created to run the ASTRA-Back-End
+#-Deu.ist.astra.persistency.dbConfigPath=/resources/db.props
+
+# Its also possible to specify the parameters through the following properties.
+
+-Deu.ist.astra.persistency.dbHost=localhost
+-Deu.ist.astra.persistency.dbPort=3306
+-Deu.ist.astra.persistency.dbName=ASTRASERVER
+-Deu.ist.astra.persistency.dbUser=ASTRASERVER
+-Deu.ist.astra.persistency.dbPassword=ASTRASERVER
+
+# URL to bundle repository
+-Doscar.repository.url=http://www.knopflerfish.org/repo/repository.xml
+
+# Various debug flags
+-Dorg.knopflerfish.framework.debug.packages=false
+-Dorg.knopflerfish.framework.debug.errors=true
+-Dorg.knopflerfish.framework.debug.classloader=false
+-Dorg.knopflerfish.framework.debug.startlevel=false
+-Dorg.knopflerfish.framework.debug.ldap=false
+
+# Comma-separated list of packges exported by system classloader
+-Dorg.osgi.framework.system.packages=
+
+# Comma-separated list of packages that may be loaded by system classloader
+-Dorg.osgi.framework.bootdelegation=*
+#-Dorg.osgi.framework.bootdelegation=sun.*,com.sun.*
+
+# Web server properties
+-Dorg.knopflerfish.http.dnslookup=false
+-Dorg.osgi.service.http.port=8080
+
+-Dorg.knopflerfish.startlevel.use=true
+
+# Log service properties
+-Dorg.knopflerfish.log.out=false
+-Dorg.knopflerfish.log.level=info
+-Dorg.knopflerfish.log.grabio=true
+-Dorg.knopflerfish.log.file=true
+
+#consoletelnet properties
+-Dorg.knopflerfish.consoletelnet.user=admin
+-Dorg.knopflerfish.consoletelnet.pwd=admin
+-Dorg.knopflerfish.consoletelnet.port=2323
+

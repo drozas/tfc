@@ -1,0 +1,32 @@
+<?eclipse.ant.import?>
+
+<project basedir="." default="wsdl">
+
+	<import file="wsdlExportClass.xml"/>
+	
+	<property name="namespace" value="proxies.rfm.astra.ist.eu"/>
+
+	<path id="axis.classpath">
+	    <fileset dir="../RemoteFrameworkManager/lib">
+	      <include name="**/*.jar" />
+	    </fileset>
+	  </path>
+	
+	 
+  <taskdef resource="axis-tasks.properties" classpathref="axis.classpath" />
+	
+  <target name="wsdl">
+  	<mkdir dir="out/wsdl"/>
+  	<axis-java2wsdl
+  	    output="out/wsdl/${ant.project.name}.wsdl"
+  	    classname="${ExportClassName}"
+  	    namespace="${namespace}"
+  		location="http://localhost:8080/axis/services/${ant.project.name}" >
+	    <classpath>
+	        <pathelement path="out"/>
+	    </classpath>
+  	</axis-java2wsdl>
+  </target>
+	
+	
+</project>

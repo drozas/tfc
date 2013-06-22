@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.contextmanager,eu.ist.astra.contextmanage
+ r.impl
+Bundle-ClassPath: ., lib/dom4j-1.6.1.jar, lib/GASOS.jar
+Bundle-Version: 2.0.0
+Bundle-Name: ContextManager
+Bundle-ManifestVersion: 2
+Bundle-Activator: eu.ist.astra.contextmanager.impl.ContextManager
+Bundle-SymbolicName: ContextManager
+Import-Package: eu.ist.astra.awarenessmanager, eu.ist.astra.ontologyma
+ nager, eu.ist.astra.serviceProxyManager, org.osgi.framework;version=1
+ .3.0, eu.ist.astra.ontologymanager.api
+Build-Date: Tue Aug 18 20:01:06 CEST 2009
+

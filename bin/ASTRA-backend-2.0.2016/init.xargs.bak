@@ -1,0 +1,28 @@
+#
+# Generated from template.xargs Knopflerfish release 2.0.1
+
+#
+
+# load common properties
+-xargs props.xargs
+
+# Prefix for searching for bundle URLs from console or command line
+-Dorg.knopflerfish.gosg.jars=file:ASTRA/
+#-Deu.ist.astra.cm.proxy.endpoint=http://localhost:8080/axis/services/CommunityManager
+#-Deu.ist.astra.default.user=john@astra
+-init
+
+
+
+#extra Initializations for ASTRA
+-istart jsdk/jsdk-2.2.jar
+-istart cm/cm_all-2.0.0.jar
+-istart commons-logging/commons-logging_all-2.0.0.jar
+-istart http/http_all-2.0.0.jar
+-istart axis-osgi/axis-osgi_all-0.1.0.jar
+
+-istart PersistencyManager-1.0.0.jar
+-istart CommunityManager-0.0.1.jar
+-istart UserManager-1.0.0.jar
+
+-launch

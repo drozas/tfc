@@ -1,0 +1,72 @@
+\BOOKMARK [0][-]{chapter.1}{Introduction}{}
+\BOOKMARK [1][-]{section.1.1}{What is ASTRA?}{chapter.1}
+\BOOKMARK [1][-]{section.1.2}{ASTRA applications}{chapter.1}
+\BOOKMARK [1][-]{section.1.3}{Motivations of the project}{chapter.1}
+\BOOKMARK [0][-]{chapter.2}{Objectives}{}
+\BOOKMARK [0][-]{chapter.3}{Methodology and involved technologies}{}
+\BOOKMARK [1][-]{section.3.1}{Methodology}{chapter.3}
+\BOOKMARK [1][-]{section.3.2}{Involved paradigms and technologies}{chapter.3}
+\BOOKMARK [2][-]{subsection.3.2.1}{SOA}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.2}{Java}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.3}{OSGi}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.4}{Swing}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.5}{XML}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.6}{DOM}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.7}{Lucene}{section.3.2}
+\BOOKMARK [2][-]{subsection.3.2.8}{MySQL}{section.3.2}
+\BOOKMARK [0][-]{chapter.4}{Description}{}
+\BOOKMARK [1][-]{section.4.1}{Requirements}{chapter.4}
+\BOOKMARK [1][-]{section.4.2}{Use cases}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.2.1}{Repository management}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.2}{Searching}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.3}{Tags management}{section.4.2}
+\BOOKMARK [2][-]{subsection.4.2.4}{Other general functionalities}{section.4.2}
+\BOOKMARK [1][-]{section.4.3}{Design}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.3.1}{Bundles design}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.2}{RepositoryManager}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.3}{TagManagerBackEnd}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.4}{TagManagerNode}{section.4.3}
+\BOOKMARK [2][-]{subsection.4.3.5}{ApplicationManager}{section.4.3}
+\BOOKMARK [1][-]{section.4.4}{Implementation}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.4.1}{Creating and deploying a bundle}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.2}{Implementing MVC in a SWING application}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.3}{Search engine development}{section.4.4}
+\BOOKMARK [2][-]{subsection.4.4.4}{Application adaptation}{section.4.4}
+\BOOKMARK [1][-]{section.4.5}{User interaction}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.5.1}{Tagging and sharing}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.2}{Locating an application in the repository}{section.4.5}
+\BOOKMARK [2][-]{subsection.4.5.3}{Retrieving and adapting an application from the repository}{section.4.5}
+\BOOKMARK [1][-]{section.4.6}{Testing}{chapter.4}
+\BOOKMARK [2][-]{subsection.4.6.1}{Functionalities verification}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.2}{OS compatibility}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.3}{Search engine testing}{section.4.6}
+\BOOKMARK [2][-]{subsection.4.6.4}{Users evaluation}{section.4.6}
+\BOOKMARK [1][-]{section.4.7}{Coordination}{chapter.4}
+\BOOKMARK [1][-]{section.4.8}{Tools}{chapter.4}
+\BOOKMARK [0][-]{chapter.5}{Conclusions}{}
+\BOOKMARK [1][-]{section.5.1}{Achieved goals}{chapter.5}
+\BOOKMARK [1][-]{section.5.2}{Contribution}{chapter.5}
+\BOOKMARK [1][-]{section.5.3}{Future work}{chapter.5}
+\BOOKMARK [1][-]{section.5.4}{Personal evaluation}{chapter.5}
+\BOOKMARK [0][-]{appendix.A}{Document scoring in Lucene}{}
+\BOOKMARK [0][-]{appendix.B}{Search engine - Testing data}{}
+\BOOKMARK [0][-]{appendix.C}{Bundles manifests}{}
+\BOOKMARK [1][-]{section.C.1}{RepositoryManager's manifest}{appendix.C}
+\BOOKMARK [1][-]{section.C.2}{TagManagerBackEnd's manifest}{appendix.C}
+\BOOKMARK [1][-]{section.C.3}{TagManagerNode's manifest}{appendix.C}
+\BOOKMARK [1][-]{section.C.4}{ApplicationManager's manifest}{appendix.C}
+\BOOKMARK [0][-]{appendix.D}{OSGi bundles configuration}{}
+\BOOKMARK [1][-]{section.D.1}{OSGi - Backend configuration}{appendix.D}
+\BOOKMARK [1][-]{section.D.2}{OSGi - Node configuration}{appendix.D}
+\BOOKMARK [0][-]{appendix.E}{GNU Free Documentation License}{}
+\BOOKMARK [1][-]{section*.11}{1. APPLICABILITY AND DEFINITIONS}{appendix.E}
+\BOOKMARK [1][-]{section*.12}{2. VERBATIM COPYING}{appendix.E}
+\BOOKMARK [1][-]{section*.13}{3. COPYING IN QUANTITY}{appendix.E}
+\BOOKMARK [1][-]{section*.14}{4. MODIFICATIONS}{appendix.E}
+\BOOKMARK [1][-]{section*.15}{5. COMBINING DOCUMENTS}{appendix.E}
+\BOOKMARK [1][-]{section*.16}{6. COLLECTIONS OF DOCUMENTS}{appendix.E}
+\BOOKMARK [1][-]{section*.17}{7. AGGREGATION WITH INDEPENDENT WORKS}{appendix.E}
+\BOOKMARK [1][-]{section*.18}{8. TRANSLATION}{appendix.E}
+\BOOKMARK [1][-]{section*.19}{9. TERMINATION}{appendix.E}
+\BOOKMARK [1][-]{section*.20}{10. FUTURE REVISIONS OF THIS LICENSE}{appendix.E}
+\BOOKMARK [1][-]{section*.21}{11. RELICENSING}{appendix.E}

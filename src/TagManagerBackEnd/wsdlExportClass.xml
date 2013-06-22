@@ -1,0 +1,4 @@
+<?xml version="1.0"?>
+<project>
+<property name="ExportClassName" value="eu.ist.astra.tmbe.ITagManagerBackEnd"/>
+</project>

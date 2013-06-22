@@ -1,0 +1,154 @@
+Log started 20090904 10:55:43
+info     20090904 10:55:43 bid#2        - [4;org.osgi.service.log.LogReaderService] ServiceEvent REGISTERED
+info     20090904 10:55:43 bid#2        - [5;org.osgi.service.log.LogService,org.knopflerfish.service.log.LogService] ServiceEvent REGISTERED
+info     20090904 10:55:43 bid#2        - BundleEvent STARTED
+info     20090904 10:55:44 bid#3        - [6;org.osgi.service.cm.ConfigurationAdmin] ServiceEvent REGISTERED
+info     20090904 10:55:44 bid#3        - BundleEvent STARTED
+info     20090904 10:55:44 bid#4        - BundleEvent RESOLVED
+info     20090904 10:55:44 bid#4        - BundleEvent STARTED
+info     20090904 10:55:44 bid#5        - BundleEvent RESOLVED
+info     20090904 10:55:44 bid#5        - [7;org.osgi.service.cm.ManagedServiceFactory] ServiceEvent REGISTERED
+info     20090904 10:55:44 bid#5        - No configuration present, creating default configuration
+info     20090904 10:55:44 bid#5        - HTTP server started on port 8080
+info     20090904 10:55:44 bid#5        - [8;org.osgi.service.http.HttpService] ServiceEvent REGISTERED
+info     20090904 10:55:44 bid#5        - BundleEvent STARTED
+info     20090904 10:55:44 bid#6        - BundleEvent RESOLVED
+info     20090904 10:55:44 bid#6        - Configuration file read.
+info     20090904 10:55:45 bid#6        - Axis server started.
+info     20090904 10:55:45 bid#5        - org.knopflerfish.bundle.axis.ServicesServlet: init
+info     20090904 10:55:45 bid#6        - Web application started.
+info     20090904 10:55:45 bid#6        - added service axisadmin
+info     20090904 10:55:45 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=org.knopflerfish.bundle.axis.AxisAdminImpl, name=axisadmin, allowedMethods=getPublishedServiceNames
+info     20090904 10:55:45 bid#6        - [9;org.knopflerfish.service.axis.AxisAdmin] ServiceEvent REGISTERED
+info     20090904 10:55:45 bid#6        - BundleEvent STARTED
+info     20090904 10:55:45 bid#7        - BundleEvent RESOLVED
+info     20090904 10:55:45 bid#0        - [stdout] RemoteFrameworkManager: Using BackEnd Location: http://localhost:8080/
+info     20090904 10:55:45 bid#6        - added service RemoteFrameworkManager
+info     20090904 10:55:45 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.rfm.impl.RemoteFrameworkManagerImpl, name=RemoteFrameworkManager, allowedMethods=getBackendLocation getRemoteService getRemoteService getPublicIPAddress
+info     20090904 10:55:45 bid#7        - [10;eu.ist.astra.rfm.IRemoteFrameworkManager] ServiceEvent REGISTERED
+info     20090904 10:55:45 bid#7        - BundleEvent STARTED
+info     20090904 10:55:45 bid#8        - BundleEvent RESOLVED
+info     20090904 10:55:45 bid#6        - added service EventsServer
+info     20090904 10:55:45 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.em.impl.EventsServerImpl, name=EventsServer, allowedMethods=notify addListener removeListener
+info     20090904 10:55:45 bid#8        - [11;eu.ist.astra.em.IEventsServer] ServiceEvent REGISTERED
+info     20090904 10:55:45 bid#6        - added service EventsManager
+info     20090904 10:55:45 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.em.impl.EventsManagerImpl, name=EventsManager, allowedMethods=addListenerURL isPassive newEvent subscribeToChannel subscribeToEvent getEvent pendingEvents reachable addListener
+info     20090904 10:55:45 bid#8        - [12;eu.ist.astra.em.IEventsManager] ServiceEvent REGISTERED
+info     20090904 10:55:45 bid#8        - BundleEvent STARTED
+info     20090904 10:55:45 bid#9        - BundleEvent RESOLVED
+info     20090904 10:55:45 bid#0        - [stdout] jdbc:mysql://localhost:3306/ASTRASERVER?user=ASTRASERVER&password=ASTRASERVER
+info     20090904 10:55:45 bid#0        - [stdout] initConnection()
+info     20090904 10:55:47 bid#0        - [stdout] setupDB()
+info     20090904 10:55:47 bid#0        - [stdout] PersistencyManager: DB Connection Monitor Daemon initiated
+info     20090904 10:55:47 bid#6        - added service PersistencyManager
+info     20090904 10:55:47 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.persistency.impl.PersistencyManagerImpl, name=PersistencyManager, allowedMethods=getAllKeys executeQuery getAllUID putData deleteAllData getData deleteData
+info     20090904 10:55:47 bid#9        - [13;eu.ist.astra.persistency.IPersistencyManager] ServiceEvent REGISTERED
+info     20090904 10:55:47 bid#9        - [14;eu.ist.astra.persistency.IDBAccess] ServiceEvent REGISTERED
+info     20090904 10:55:47 bid#9        - BundleEvent STARTED
+info     20090904 10:55:47 bid#10       - BundleEvent RESOLVED
+info     20090904 10:55:47 bid#10       - BundleEvent STARTED
+info     20090904 10:55:47 bid#11       - BundleEvent RESOLVED
+info     20090904 10:55:47 bid#0        - [stdout] UserManager created
+info     20090904 10:55:47 bid#0        - [stdout] UserManager.setupDB()
+info     20090904 10:55:47 bid#6        - added service UserManager
+ERROR    20090904 10:55:47 bid#4        - org.knopflerfish.axis.ObjectSOAPService: Failed to analyze methods in service object:eu.ist.astra.user.impl.UserManager (java.lang.ClassNotFoundException: eu.ist.astra.user.IUserManager)
+info     20090904 10:55:47 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.user.impl.UserManager, name=UserManager, allowedMethods=*
+info     20090904 10:55:47 bid#11       - [15;eu.ist.astra.user.IUserManager] ServiceEvent REGISTERED
+info     20090904 10:55:47 bid#0        - [stdout] [User and Identity Manager]: Started Sucessfully
+info     20090904 10:55:47 bid#11       - BundleEvent STARTED
+info     20090904 10:55:47 bid#12       - BundleEvent RESOLVED
+info     20090904 10:55:47 bid#0        - [stdout] CommunityEventManager started
+Warning  20090904 10:55:47 bid#4        - org.apache.axis.utils.JavaUtils: Unable to find required classes (javax.activation.DataHandler and javax.mail.internet.MimeMultipart). Attachment support is disabled.
+info     20090904 10:55:47 bid#0        - [stdout] CommunityManager.setupDB()
+info     20090904 10:55:47 bid#6        - added service CommunityManager
+info     20090904 10:55:47 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.cm.impl.CommunityManagerImpl, name=CommunityManager, allowedMethods=removeData putData removeCommunity addMember addMember createCommunity createCommunity getCommunitiesOwned getCommunitiesOwnedString isMemberOf isMemberOfString getCommunityIdentifiers getCommunityIdentifiersString getCommunityMembers getCommunityMembersString getCommunityName getCommunityOwner addApplication removeApplication getApplications removeMember changeOwner checkJoinRequest checkJoinRequests getJoinRequests acceptJoinRequest denyJoinRequest inviteToJoin requestToJoin getData
+info     20090904 10:55:47 bid#12       - [16;eu.ist.astra.cm.ICommunityManager] ServiceEvent REGISTERED
+info     20090904 10:55:47 bid#6        - added service CommunityEventManager
+info     20090904 10:55:47 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.cm.event.impl.CommunityEventManagerImpl, name=CommunityEventManager, allowedMethods=registerListener unregisterAllListeners unregisterListener
+info     20090904 10:55:47 bid#12       - [17;eu.ist.astra.cm.event.ICommunityEventManager] ServiceEvent REGISTERED
+info     20090904 10:55:48 bid#12       - BundleEvent STARTED
+info     20090904 10:55:48 bid#13       - BundleEvent RESOLVED
+info     20090904 10:55:48 bid#0        - [stdout] AAMB.setupDB()
+info     20090904 10:55:48 bid#6        - added service AwarenessApplicationManagerBackend
+ERROR    20090904 10:55:48 bid#4        - org.knopflerfish.axis.ObjectSOAPService: Failed to analyze methods in service object:eu.ist.astra.aam.backend.AwarenessApplicationManagerBackendImpl (java.lang.ClassNotFoundException: eu.ist.astra.aam.backend.IAwarenessApplicationManagerBackend)
+info     20090904 10:55:48 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.aam.backend.AwarenessApplicationManagerBackendImpl, name=AwarenessApplicationManagerBackend, allowedMethods=*
+info     20090904 10:55:48 bid#13       - [18;eu.ist.astra.aam.backend.IAwarenessApplicationManagerBackend] ServiceEvent REGISTERED
+info     20090904 10:55:48 bid#13       - BundleEvent STARTED
+info     20090904 10:55:48 bid#14       - BundleEvent RESOLVED
+info     20090904 10:55:48 bid#6        - added service TagManagerBackEnd
+info     20090904 10:55:48 bid#4        - org.knopflerfish.axis.ObjectSOAPService: deployed object=eu.ist.astra.tmbe.impl.TagManagerBackEnd, name=TagManagerBackEnd, allowedMethods=addTag addTagByCommunity getTags getTagsByCommunity getTagsByApplication addTagListener deleteTag deleteTag
+info     20090904 10:55:48 bid#14       - [19;eu.ist.astra.tmbe.ITagManagerBackEnd] ServiceEvent REGISTERED
+info     20090904 10:55:48 bid#14       - BundleEvent STARTED
+info     20090904 10:55:48 bid#15       - BundleEvent RESOLVED
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadApplications() - Loading applications from DB
+info     20090904 10:55:48 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:beer,admin@astra,going out to have some beers,2009-08-05 16:57:00.928)
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:beer
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:beer
+info     20090904 10:55:48 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:cinema,admin@astra,watch a movie in the cinema,2009-08-05 17:00:07.199)
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:cinema
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:cinema
+info     20090904 10:55:48 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:coffee,admin@astra,going to have a coffee,2009-08-05 17:00:13.256)
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:coffee
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:coffee
+info     20090904 10:55:48 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:concert,admin@astra,go to a live music concert,2009-08-05 17:00:19.623)
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:concert
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:concert
+info     20090904 10:55:48 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:dance,admin@astra,going out to dance in some disco,2009-08-05 17:00:28.863)
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:dance
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:dance
+info     20090904 10:55:48 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:girlfriend_home,admin@astra,i am at my girlfriend home,2009-08-05 17:16:48.376)
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:girlfriend_home
+info     20090904 10:55:48 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:girlfriend_home
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:go_jogging,admin@astra,go jogging to the forest,2009-08-05 17:01:02.342)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:go_jogging
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:go_jogging
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:go_sightseeing,admin@astra,go sightseeing in our city,2009-08-05 17:01:09.166)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:go_sightseeing
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:go_sightseeing
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:go_to_the_gym,admin@astra,go to the gym to train,2009-08-05 17:01:15.825)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:go_to_the_gym
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:go_to_the_gym
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:happy,admin@astra,i am really happy,2009-08-05 17:01:23.751)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:happy
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:happy
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:hating_you,admin@astra,I think of you, and I am really angry,2009-08-05 17:01:32.686)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:hating_you
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:hating_you
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:home,admin@astra,i am at home,2009-08-05 17:01:44.15)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:home
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:home
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:missing_you,admin@astra,I am missing you so much,2009-08-05 17:01:55.238)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:missing_you
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:missing_you
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:museum,admin@astra,go to a museum ,2009-08-05 17:02:04.837)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:museum
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:museum
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:my_parents,admin@astra,i am at my parents home,2009-08-05 17:02:12.779)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:my_parents
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:my_parents
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:office,admin@astra,i am at work, in my office,2009-08-05 17:02:21.885)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:office
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:office
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:photography_exposition,admin@astra,going to that new photography exposition,2009-08-05 17:02:30.43)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:photography_exposition
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:photography_exposition
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:play_basketball_match,admin@astra,play an amateur basketball match,2009-08-05 17:02:37.228)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:play_basketball_match
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:play_basketball_match
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:play_football,admin@astra,play a football match,2009-08-05 17:02:46.533)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:play_football
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:play_football
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:play_handball,admin@astra,play a handball match,2009-08-05 17:02:53.301)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:play_handball
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:play_handball
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:romantic_dinner,admin@astra,going to an Italian restaurant to have a romantic dinner,2009-08-05 17:03:01.78)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:romantic_dinner
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:romantic_dinner
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:sad,admin@astra,i feel sad,2009-08-05 17:03:10.205)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:sad
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:sad
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:tapas,admin@astra,go to a Spanish restaurant to have some tapas,2009-08-05 17:03:16.35)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:tapas
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading Rules from DB for application admin@astra:tapas
+info     20090904 10:55:49 bid#0        - [stdout] new eu.ist.astra.rm.impl.SharedApplication(admin@astra:thinking_of_you,admin@astra,i miss you and i am thinking of you,2009-08-05 17:03:22.652)
+info     20090904 10:55:49 bid#0        - [stdout] RM.loadRules() - Loading relationships between application and communities admin@astra:thinking_of_you

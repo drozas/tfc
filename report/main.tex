@@ -1,0 +1,238 @@
+\documentclass[oneside,a4paper,12pt,textsf]{report}
+\usepackage[pdftex]{graphicx}
+\usepackage[a4paper,left=3cm,right=2.8cm, top=3.5cm, bottom=3.5cm]{geometry}
+\usepackage[latin1]{inputenc}
+%\usepackage[none]{hyphenat}
+\usepackage{verbatim}
+\usepackage{fancyhdr}
+\usepackage{pifont}
+
+%%To add bookmarks
+\usepackage[bookmarks=true]{hyperref}
+
+
+\newcommand{\tick}{\ding{52}}
+\renewcommand{\baselinestretch}{1.3}
+
+\fancypagestyle{headings} {\fancyhf{}
+  \fancyhead[LE]{\thepage}
+  \fancyhead[RE]{\slshape \leftmark}
+  \fancyhead[LO]{\slshape \rightmark}
+  \fancyhead[RO]{ \thepage}
+
+  \renewcommand{\headrulewidth}{1pt}
+  \renewcommand{\footrulewidth}{0pt}
+}
+
+\hyphenation{check}
+\hyphenation{checks}
+\hyphenation{u-su-a-rios}
+\hyphenation{vi-si-bi-li-dad}
+\hyphenation{in-teres-ting}
+
+\fancypagestyle{plain} {\fancyhf{}
+  \renewcommand{\headrulewidth}{0pt} 
+  \renewcommand{\footrulewidth}{0pt}
+  \fancyfoot[C]{\thepage}
+}
+
+\pagestyle{headings}
+
+\begin{document}
+
+%%With this option the subsubsections are enumerated
+\addtocounter{secnumdepth}{1}
+
+%----------------------- COVER ------------------------------
+\thispagestyle{empty}
+
+\begin{figure}
+\centering
+\includegraphics[scale=0.25]{img/urjc_logo}
+\vspace{1cm}
+\end{figure}
+
+\begin{center}
+
+{\large{\bf ESCUELA SUPERIOR DE INGENIERÍA INFORMÁTICA}}
+\vspace{5mm}
+
+
+{\large{\bf INGENIERÍA INFORMÁTICA}}
+\vspace{5mm}
+
+{\large {\bf Curso académico 2008-2009}}
+
+\vspace{5mm}
+
+{\large {\bf Proyecto de Fin de Carrera}}
+
+\vspace{3.5cm}
+
+{\Large {\bf Development and integration of an awareness applications manager
+into ASTRA}}
+
+\end{center}
+
+\vspace{2.5cm}
+
+\begin{large}
+\makebox[15cm][c]{
+\begin{tabular}{ll}
+{Autor}:& David Rozas Domingo \\
+{Tutoras}: & Soto Montalvo (URJC)\\
+& Monica Divitini (NTNU) \\
+&\\
+
+\end{tabular}
+}
+\end{large}
+\newpage
+\thispagestyle{empty}
+
+%------------------------- END COVER--------------------------------------
+
+%-------------------- LICENSE NOTICE -------------------------------------
+\bigskip
+\begin{quote}
+    Copyright \copyright{}  2009  David Rozas Domingo.
+    Permission is granted to copy, distribute and/or modify this document
+    under the terms of the GNU Free Documentation License, Version 1.3
+    or any later version published by the Free Software Foundation;
+    with no Invariant Sections, no Front-Cover Texts, and no Back-Cover Texts.
+    A copy of the license is included in Section \ref{appendix:gfdl}. 
+\end{quote}
+\bigskip
+%--------------------------------------------------------------------------
+
+%-------------------------DEDICATION---------------------------------------
+\newpage
+\thispagestyle{empty}
+
+\bigskip
+\begin{flushright}
+	\emph{A mis padres.}\\
+	\emph{Gracias por educarme para ser la persona} \\
+    \emph{que soy, con mis defectos y mis virtudes,} \\
+    \emph{con mis aciertos y mis errores. Os quiero.}
+\end{flushright}
+
+
+\clearpage
+%--------------------------------------------------------------------------
+
+%-------------------------ACKNOWLEDGMENTS----------------------------------
+\vspace{3.5cm}
+\textbf{\Huge{Acknowledgments}}\\
+ \vspace{1.5cm}
+
+I would like to thank Professors Soto Montalvo and Monica Divitini for giving
+me the opportunity of making this project possible.
+I wish to thank also all the people from NTNU, CTI and Telenor involved in
+ASTRA; specially Alfredo, a fantastic computer scientist but even better friend.
+
+\clearpage
+%--------------------------------------------------------------------------
+
+
+%-------------------------ABSTRACT----------------------------------
+%\thispagestyle{empty} \cleardoublepage \thispagestyle{empty}
+\vspace{3.5cm}
+\textbf{\Huge{Abstract}}\\
+ \vspace{1.5cm}
+
+ASTRA (Awareness Services and Systems - Towards Theory and Realization)
+is a project that researches awareness systems and services that are used for
+social purposes through the creation of awareness applications.
+The project discussed in this document is part of the work developed for ASTRA,
+and it aims the creation and integration of a system to manage the mentioned
+awareness applications, including functionalities for sharing, tagging, locating,
+appropriating and adapting them, taking into account the concerns about privacy
+in terms of visibility for all the involved elements (applications, tags, etc.).
+
+The backbone of ASTRA is ``ASTRA SOA'' (Service Oriented Architecture), the
+platform where all the necessary services are offered. It is made up of a group
+of OSGi bundles which are divided into two subsystems from a high level point of
+view: ASTRA Node and ASTRA Backend, following a Client-Server model. This
+document details the process carried on to develop a new set of bundles for
+both subsystems, which offer the previously mentioned functionalities. It also
+includes an analysis of an users study evaluation performed at
+NTNU (Trondheim, Norway) in December 2008 with a preliminary version, and the
+guidelines to perform a new users study scheduled in October 2009, with
+emphasis on the searching capabilities evaluation.
+
+
+
+\clearpage 
+%--------------------------------------------------------------------------
+
+%-------------------------RESUMEN----------------------------------
+\vspace{3.5cm}
+\textbf{\Huge{Resumen}}\\
+ \vspace{1.5cm}
+
+ASTRA (Awareness Services and Systems - Towards Theory and Realization) es un
+proyecto que investiga sistemas y servicios ``awareness'' empleados para
+propósitos sociales a través de la creación de aplicaciones ``awareness''.
+El proyecto que se detalla en este documento se enmarca dentro del trabajo
+desarrollado en ASTRA, y tiene como objetivo la creación e integración de un
+sistema para gestionar dichas aplicaciones, incluyendo funcionalidades para
+compartirlas, etiquetarlas, localizarlas, recuperarlas y adaptarlas, haciendo
+hincapié en la privacidad en términos de visibilidad de todos los elementos
+(aplicaciones, etiquetas, etc.).
+
+La piedra angular de ASTRA es ``ASTRA SOA'' (Service Oriented Architecture), la
+plataforma desde la que se ofrecen todos los servicios necesarios. Está
+compuesta por un grupo de bundles OSGi que, a alto nivel, se
+dividen en dos subsistemas que siguen un modelo Cliente-Servidor: ASTRA Node y
+ASTRA Backend. Este documento detalla el proceso llevado a cabo para desarrollar
+un conjunto de nuevos bundles para ambos subsistemas, que ofrecen las
+funcionalidades previamente mencionadas. Se incluye igualmente un análisis de
+un estudio de usuarios para la evaluación de una versión preliminar llevado
+a cabo en la universidad NTNU (Trondheim, Noruega) en diciembre de 2008, así
+como una serie de pautas para el próximo estudio de usuarios programado para
+Octubre de 2009, con especial hincapié en la evaluación de las nuevas
+funcionalidades relativas a los procesos de búsqueda.
+
+\clearpage 
+%--------------------------------------------------------------------------
+
+\tableofcontents
+\listoftables
+\listoffigures
+
+
+%%Introduction
+\input{chapters/chapter_01}
+
+%%Objectives
+\input{chapters/chapter_02}
+
+
+%%Methodology and technologies
+\input{chapters/chapter_03}
+
+%%Description
+\input{chapters/chapter_04}
+
+%%Conclusions
+\input{chapters/chapter_05}
+
+
+%%Appendixes
+
+\appendix
+\include{appendixes/score_lucene}
+\include{appendixes/search_engine_testing_data}
+\include{appendixes/manifests}
+\include{appendixes/osgi_bundles_config}
+\include{appendixes/fdl-1.3}
+
+
+%% Bibliography
+\nocite*
+
+\bibliography{bibliography}
+\bibliographystyle{alpha}
+
+\end{document}

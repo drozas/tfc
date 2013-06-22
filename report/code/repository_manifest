@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.rm,eu.ist.astra.rm.impl
+Bundle-Vendor: IST ASTRA
+Bundle-ClassPath: ., lib/lucene-2_4_1_svn.jar
+Bundle-Version: 2.0.0
+Bundle-Name: RepositoryManager
+Bundle-Activator: eu.ist.astra.rm.impl.Activator
+Bundle-Description: Repository Manager bundle which manages the sharing 
+process in the back-end
+Bundle-SymbolicName: RepositoryManager
+Import-Package: org.osgi.framework, eu.ist.astra.persistency, 
+eu.ist.astra.cm, eu.ist.astra.tmbe
+(...)

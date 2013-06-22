@@ -1,0 +1,66 @@
+%%% Tables for tmbe interface %%%%
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l|l||}
+        
+        %%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{addTag}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Creates a new private tag.} \\
+		\hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			name & String & Tag name. \\
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & Identifier of the user who tags the application. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the operation was successful,
+		false otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+
+
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getTags}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns a list of private tags for the
+		given application.} \\ 
+		\hline \hline 
+			Parameter & Type & Description \\
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & Identifier of the user. \\
+			limit & Integer & Limit on number of results returned. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, list of private tags for the
+		given application.} \\
+		\hline
+		\hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%	
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{deleteTag}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Deletes a private tag.} \\
+		\hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			name & String & Tag name. \\
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & Identifier of the user who tagged the application. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the operation was successful,
+		false otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+
+		
+		\end{tabular}
+		\caption{\label{table:tmn-interface} TagManagerNode interface}
+	\end{center}
+\end{table}

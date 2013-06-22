@@ -1,0 +1,169 @@
+%%% Tables for tmbe interface %%%%
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l|l||}
+        
+        %%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{addTag (overloaded)}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Creates a public tag.} \\
+		\hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			name & String & Tag name. \\
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & Identifier of the user who tags the application. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the operation was successful,
+		false otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{addTag (overloaded)}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Creates a tag only visible for that
+		community.} \\ \hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			name & String & Tag name. \\
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & Identifier of the user who tags the application. \\
+			communityId & String & Community identifier. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the operation was successful,
+		false otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+
+
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getTags}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns a list of public tags for the
+		given application.} \\ 
+		\hline \hline 
+			Parameter & Type & Description \\
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+			limit & Integer & Limit on number of results returned. \\ \hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, list of public tags for the
+		given application.} \\
+		\hline
+		\hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%	
+		
+		
+				%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getTagsByCommunity}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns a list of public tags for the
+		given application and community.} \\ 
+		\hline \hline 
+			Parameter & Type & Description \\
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+			limit & Integer & Limit on number of results returned. \\
+			communityId & String & Community identifier. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, list of public tags for the
+		given application and community.} \\
+		\hline
+		\hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%	
+		
+		\end{tabular}
+		\caption{\label{table:tmbe-interface-1} TagManagerBackEnd interface}
+	\end{center}
+\end{table}
+
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l|l||}
+        
+       
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getTagsByApplication}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns a list of tags associated to 
+		the application	which are public} \\ 
+		\multicolumn{3}{||l||}{or visible for that user (because he belongs to
+		that community).} \\ \hline \hline 
+			Parameter & Type & Description \\
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & User identifier. \\
+			limit & Integer & Limit on number of results returned. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, list of visible tags for this
+		user associated to the given application.}
+		\\
+		\hline
+		\hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%	
+		
+		
+				%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{deleteTag (overloaded)}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Deletes a public tag.} \\
+		\hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			name & String & Tag name. \\
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & Identifier of the user who tagged the application. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the operation was successful,
+		false otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{deleteTag (overloaded)}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Deletes a tag for a given community.} \\
+		\hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			name & String & Tag name. \\
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & Identifier of the user who tagged the application. \\
+			communityId & String & Community identifier. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the operation was successful,
+		false otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+	
+		\end{tabular}
+		\caption{\label{table:tmbe-interface-2} TagManagerBackEnd interface (II)}
+	\end{center}
+\end{table}
+
+
+% 
+% \begin{table}[h!]
+% 	\small
+%     \begin{center}
+% 		\begin{tabular}{||r|l|l||}
+%         
+% 
+% 		
+% 		\end{tabular}
+% 		\caption{\label{table:tmbe-interface-3} Tag Manager Backend interface (III)}
+% 	\end{center}
+% \end{table}

@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Bundle-Vendor: IST ASTRA
+Bundle-ClassPath: ., lib/axis.jar, lib/commons-discovery-0.2.jar, lib/
+ commons-logging-1.0.4.jar, lib/jaxrpc.jar, lib/saaj.jar, lib/wsdl4j-1
+ .5.1.jar
+Bundle-Version: 2.0.0
+Bundle-Name: CommunityManagerProxy
+Bundle-Activator: eu.ist.astra.cm.proxy.Activator
+Bundle-ManifestVersion: 2
+Bundle-Description: ASTRA Community Manager Proxy bundle
+Import-Package: org.osgi.framework, eu.ist.astra.cm.event, eu.ist.astr
+ a.cm
+Bundle-SymbolicName: CommunityManagerProxy
+Build-Date: Tue Aug 18 20:00:25 CEST 2009
+

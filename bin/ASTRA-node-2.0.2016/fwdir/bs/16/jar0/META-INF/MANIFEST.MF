@@ -1,0 +1,12 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.aam,eu.ist.astra.aam.impl
+Bundle-ClassPath: ., lib/dom4j-1.6.1.jar
+Bundle-Version: 2.0.0
+Bundle-Name: AwarenessApplicationManager
+Bundle-Activator: eu.ist.astra.aam.impl.Activator
+Import-Package: org.osgi.framework;version=1.3.0, eu.ist.astra.persist
+ ency, eu.ist.astra.awarenessmanager, eu.ist.astra.cm, eu.ist.astra.cm
+ .event, eu.ist.astra.rfm, eu.ist.astra.rfm.proxies
+Bundle-SymbolicName: AwarenessApplicationManager
+Build-Date: Tue Aug 18 20:01:01 CEST 2009
+

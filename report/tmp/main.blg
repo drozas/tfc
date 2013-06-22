@@ -1,0 +1,107 @@
+This is BibTeX, Version 0.99c (Web2C 7.5.6)
+The top-level auxiliary file: main.aux
+A level-1 auxiliary file: appendixes/score_lucene.aux
+A level-1 auxiliary file: appendixes/search_engine_testing_data.aux
+A level-1 auxiliary file: appendixes/manifests.aux
+A level-1 auxiliary file: appendixes/osgi_bundles_config.aux
+A level-1 auxiliary file: appendixes/fdl-1.3.aux
+The style file: alpha.bst
+Database file #1: bibliography.bib
+Name 1 in "{Sanjay, Addicam V.}," has a comma at the end for entry agile-paper
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Sanjay, Addicam V.}," has a comma at the end for entry agile-paper
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Sanjay, Addicam V.}," has a comma at the end for entry agile-paper
+while executing---line 1185 of file alpha.bst
+Name 2 in "{Beck, Kevin}, {Beedle, Mike} and {others}," has a comma at the end for entry agile-manifesto
+while executing---line 1185 of file alpha.bst
+Name 2 in "{Beck, Kevin}, {Beedle, Mike} and {others}," has a comma at the end for entry agile-manifesto
+while executing---line 1185 of file alpha.bst
+Name 2 in "{Beck, Kevin}, {Beedle, Mike} and {others}," has a comma at the end for entry agile-manifesto
+while executing---line 1185 of file alpha.bst
+Name 1 in "{McCabe, Francis G.}," has a comma at the end for entry soa-principles
+while executing---line 1185 of file alpha.bst
+Name 1 in "{McCabe, Francis G.}," has a comma at the end for entry soa-principles
+while executing---line 1185 of file alpha.bst
+Name 1 in "{McCabe, Francis G.}," has a comma at the end for entry soa-principles
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Le H\'{e}garet, Philippe}," has a comma at the end for entry w3c-soap-spec
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Le H\'{e}garet, Philippe}," has a comma at the end for entry w3c-soap-spec
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Le H\'{e}garet, Philippe}," has a comma at the end for entry w3c-soap-spec
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Sun Microsystems}," has a comma at the end for entry swing-concurrency
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Sun Microsystems}," has a comma at the end for entry swing-concurrency
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Sun Microsystems}," has a comma at the end for entry swing-concurrency
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Apache Lucene Team}," has a comma at the end for entry lucene-scoring-explanation
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Apache Lucene Team}," has a comma at the end for entry lucene-scoring-explanation
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Apache Lucene Team}," has a comma at the end for entry lucene-scoring-explanation
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Apache Lucene Team}," has a comma at the end for entry lucene-scoring-formula
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Apache Lucene Team}," has a comma at the end for entry lucene-scoring-formula
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Apache Lucene Team}," has a comma at the end for entry lucene-scoring-formula
+while executing---line 1185 of file alpha.bst
+Name 1 in "{Apache Lucene Team}," has a comma at the end for entry lucene-scoring-formula
+while executing---line 1250 of file alpha.bst
+Name 1 in "{Apache Lucene Team}," has a comma at the end for entry lucene-scoring-explanation
+while executing---line 1250 of file alpha.bst
+Name 2 in "{Beck, Kevin}, {Beedle, Mike} and {others}," has a comma at the end for entry agile-manifesto
+while executing---line 1250 of file alpha.bst
+Name 1 in "{Le H\'{e}garet, Philippe}," has a comma at the end for entry w3c-soap-spec
+while executing---line 1250 of file alpha.bst
+Name 1 in "{McCabe, Francis G.}," has a comma at the end for entry soa-principles
+while executing---line 1250 of file alpha.bst
+Name 1 in "{Sanjay, Addicam V.}," has a comma at the end for entry agile-paper
+while executing---line 1250 of file alpha.bst
+Name 1 in "{Sun Microsystems}," has a comma at the end for entry swing-concurrency
+while executing---line 1250 of file alpha.bst
+You've used 16 entries,
+            2543 wiz_defined-function locations,
+            632 strings with 6496 characters,
+and the built_in function-call counts, 4605 in all, are:
+= -- 443
+> -- 194
+< -- 10
++ -- 59
+- -- 56
+* -- 246
+:= -- 821
+add.period$ -- 48
+call.type$ -- 16
+change.case$ -- 83
+chr.to.int$ -- 15
+cite$ -- 16
+duplicate$ -- 224
+empty$ -- 336
+format.name$ -- 82
+if$ -- 909
+int.to.chr$ -- 2
+int.to.str$ -- 0
+missing$ -- 19
+newline$ -- 83
+num.names$ -- 48
+pop$ -- 92
+preamble$ -- 1
+purify$ -- 102
+quote$ -- 0
+skip$ -- 183
+stack$ -- 0
+substring$ -- 114
+swap$ -- 16
+text.length$ -- 10
+text.prefix$ -- 10
+top$ -- 0
+type$ -- 116
+warning$ -- 0
+while$ -- 38
+width$ -- 19
+write$ -- 194
+(There were 28 error messages)

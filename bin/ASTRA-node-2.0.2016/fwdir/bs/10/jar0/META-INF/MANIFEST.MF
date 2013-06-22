@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.persistency
+Bundle-ClassPath: ., resources/mysql-connector-java-5.0.4-bin.jar
+Bundle-Version: 2.0.0
+Bundle-Name: PersistencyManager
+Bundle-Activator: eu.ist.astra.persistency.impl.Activator
+Bundle-ManifestVersion: 2
+Bundle-SymbolicName: PersistencyManager
+Import-Package: org.osgi.framework
+Build-Date: Tue Aug 18 20:00:47 CEST 2009
+

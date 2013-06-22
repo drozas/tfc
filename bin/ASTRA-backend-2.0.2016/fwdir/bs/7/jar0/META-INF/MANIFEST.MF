@@ -1,0 +1,14 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.rfm, eu.ist.astra.rfm.proxies
+Bundle-ClassPath: ., lib/ant-contrib-0.6.jar, lib/axis-ant.jar, lib/ax
+ is.jar, lib/commons-discovery-0.2.jar, lib/commons-logging-1.0.4.jar,
+  lib/jaxrpc.jar, lib/log4j-1.2.8.jar, lib/saaj.jar, lib/wsdl4j-1.5.1.
+ jar
+Bundle-Version: 2.0.0
+Bundle-Name: RemoteFrameworkManager
+Bundle-Activator: eu.ist.astra.rfm.impl.Activator
+Bundle-ManifestVersion: 2
+Import-Package: org.osgi.framework
+Bundle-SymbolicName: RemoteFrameworkManager
+Build-Date: Tue Aug 18 20:00:54 CEST 2009
+

@@ -1,0 +1,132 @@
+<rdf:RDF 
+  xmlns:XMLSchema ="http://www.w3.org/2000/10/XMLSchema#"
+  xmlns:eGadgets16 ="http://eGadgets16#"
+  xmlns:rdf ="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+  xmlns:daml_oil ="http://www.daml.org/2001/03/daml+oil#"
+  xmlns:rdfs ="http://www.w3.org/2000/01/rdf-schema#"
+  xmlns ="http://eGadgets16#"
+  >
+
+
+<eGadget rdf:ID="eDeskLamp">   
+  <eGtID>
+    <XMLSchema:string>      <rdf:value>ELamp@1048069402660 </rdf:value>       
+    </XMLSchema:string>
+  </eGtID>
+  <_TPlug rdf:resource="#TeDeskLamp"/>
+  <_SPlug rdf:resource="#LampDimmer"/>
+  <_SPlug rdf:resource="#LampTuner"/>
+  <_SPlug rdf:resource="#Flash"/>
+</eGadget>
+
+<TPlug rdf:ID="TeDeskLamp">   
+  <PlugID>
+    <XMLSchema:integer>      <rdf:value>TeDeskLampID</rdf:value>       
+    </XMLSchema:integer>
+  </PlugID>
+  <eGtID>
+    <XMLSchema:string>      <rdf:value>ELamp@1048069402660 </rdf:value>       
+    </XMLSchema:string>
+  </eGtID>
+  <PlugOwner rdf:resource="#eDeskLamp"/>
+  <_Sensor rdf:resource="#Bulb"/>
+  <_Actuator rdf:resource="#BulbswitchA"/>
+  <Communication rdf:resource="#theCommunication"/>
+  <Memory rdf:resource="#theMemory"/>
+  <Processor rdf:resource="#theProcessor"/>
+</TPlug>
+
+<ProcessingUnit rdf:ID="theProcessor">   
+</ProcessingUnit>
+
+<CommunicationUnit rdf:ID="theCommunication">   
+</CommunicationUnit>
+ 
+<MemoryUnit rdf:ID="theMemory">   
+</MemoryUnit>
+
+<Actuator rdf:ID="Dimmer">   
+  <Data_type>
+    <XMLSchema:string>      <rdf:value>integer</rdf:value>       
+    </XMLSchema:string>
+  </Data_type>
+</Actuator>
+
+<Actuator rdf:ID="BulbswitchA">   
+  <Data_type>
+    <XMLSchema:string>      <rdf:value>boolean</rdf:value>       
+    </XMLSchema:string>
+  </Data_type>
+</Actuator>
+
+<Sensor rdf:ID="Bulb">   
+  <Data_type>
+    <XMLSchema:string>      <rdf:value>boolean</rdf:value>       
+    </XMLSchema:string>
+  </Data_type>
+</Sensor>
+ 
+ 
+<SPlug rdf:ID="LampDimmer">   
+  <PlugID>
+    <XMLSchema:integer>      <rdf:value>LampDimmerID</rdf:value>       
+    </XMLSchema:integer>
+  </PlugID>
+  <eGtID>
+    <XMLSchema:string>      <rdf:value>ELamp@1048069402660 </rdf:value>       
+    </XMLSchema:string>
+  </eGtID>
+  <Documentation>
+    <XMLSchema:string>      <rdf:value>The plug LampDimmer provides service Light with the following attributes: Colours;Yellow, Luminocity;50Lux and service On_off with the following attributes: and service Tuner with the following attributes</rdf:value>       
+    </XMLSchema:string>
+  </Documentation>
+  <PlugOwner rdf:resource="#eDeskLamp"/>
+  <Services rdf:resource="#eGadgets16_00154"/>
+</SPlug>
+
+<SPlug rdf:ID="LampTuner">   
+  <PlugID>
+    <XMLSchema:integer>      <rdf:value>LampTunerID</rdf:value>       
+    </XMLSchema:integer>
+  </PlugID>
+  <eGtID>
+    <XMLSchema:string>      <rdf:value>ELamp@1048069402660 </rdf:value>       
+    </XMLSchema:string>
+  </eGtID>
+  <Documentation>
+    <XMLSchema:string>      <rdf:value>The plug LampTuner provides service Light with the following attributes: Colours;Yellow, Luminocity;50Lux and service On_off with the following attributes: and service Tuner with the following attributes</rdf:value>       
+    </XMLSchema:string>
+  </Documentation>
+  <PlugOwner rdf:resource="#eDeskLamp"/>
+  <Services rdf:resource="#eGadgets16_00156"/>
+</SPlug>
+
+<SPlug rdf:ID="Flash">   
+  <PlugID>
+    <XMLSchema:integer>      <rdf:value>FlashID</rdf:value>       
+    </XMLSchema:integer>
+  </PlugID>
+  <eGtID>
+    <XMLSchema:string>      <rdf:value>ELamp@1048069402660 </rdf:value>       
+    </XMLSchema:string>
+  </eGtID>
+  <Documentation>
+    <XMLSchema:string>      <rdf:value>The plug Flash provides service Light with the following attributes: Colours;Yellow, Luminocity;50Lux and service On_off with the following attributes: and service Tuner with the following attributes</rdf:value>       
+    </XMLSchema:string>
+  </Documentation>
+  <PlugOwner rdf:resource="#eDeskLamp"/>
+  <Services rdf:resource="#eGadgets16_00155"/>
+</SPlug>
+
+ 
+<Light rdf:ID="eGadgets16_00154">  
+</Light>
+
+<On_off rdf:ID="eGadgets16_00155">   
+</On_off>
+
+<Tuner rdf:ID="eGadgets16_00156">   
+</Tuner>
+ 
+
+</rdf:RDF>

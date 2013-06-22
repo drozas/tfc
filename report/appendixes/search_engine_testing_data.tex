@@ -1,0 +1,377 @@
+\chapter{Search engine - Testing data}
+\label{appendix:testing-search-engine-data}
+\phantomsection 
+
+In this appendix we detail the data we gathered to perform the evaluation of
+the search by similarity offered by the search engine. The analysis of this
+data can be found in Section \ref{subsec:testing-search-engine}.
+
+Tables \ref{table:testing-data-sport}, \ref{table:testing-data-social},
+\ref{table:testing-data-feelings}, \ref{table:testing-data-cultural} and
+\ref{table:testing-data-location} shows the initial set of raw data from which
+we began our analysis for each group.
+
+%Sport
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Sport}} \\
+		\hline \hline
+			Application identifier & Application description & Tags \\
+			\hline \hline
+			admin@astra:go\_jogging	& go jogging to the forest & sport, exercise, run,
+			fit\\
+			\hline
+			admin@astra:go\_to\_the\_gym & go to the gym to train & fit, health, sport,
+			muscle\\
+			\hline
+			admin@astra:play\_basketball\_match & play an amateur basketball match &
+			health, ball, sport, amateur\\
+			\hline
+			admin@astra:play\_football & play a football match & ball, sport, goalkeeper,
+			offside\\
+			\hline
+			admin@astra:play\_handball & play a handball match & sport, fun, ball,
+			amateur\\
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-data-sport}Search by similarity evaluation - raw
+		data (sport)}
+	\end{center}
+\end{table} 
+
+%Social
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Social}} \\
+		\hline \hline
+			Application identifier & Application description & Tags \\
+			\hline \hline
+			admin@astra:beer & going out to have some beers & beer, fun, social,
+			friends\\
+			\hline
+			admin@astra:tapas & go to a Spanish restaurant to have some tapas
+			& restaurant, food, spain, social\\
+			\hline
+			admin@astra:coffee & going to have a coffee & break, social, relax, talk\\
+			\hline
+			admin@astra:romantic\_dinner & going to an Italian restaurant to have a
+			romantic dinner & restaurant, meal, food, social\\
+			\hline
+			admin@astra:dance & going out to dance in some disco & party, friends, beer,
+			fun\\
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-data-social}Search by similarity evaluation -
+		raw data (social)}
+	\end{center}
+\end{table} 
+
+%Feelings
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Feelings}} \\
+		\hline \hline
+			Application identifier & Application description & Tags \\
+			\hline \hline
+			admin@astra:happy & I am really happy & feeling, nice, love, great\\
+			\hline
+			admin@astra:hating\_you & I think of you, and I am really angry & angry,
+			hate, feelings, furious\\
+			\hline
+			admin@astra:missing\_you & I am missing you so much & love, nostalgy,
+			feeling, lovely\\
+			\hline
+			admin@astra:sad	& I feel sad & lonely, feeling, terrible, nostalgy\\
+			\hline
+			admin@astra:thinking\_of\_you &	I miss you and I am thinking of you & love,
+			nostalgy, feeling, hug\\
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-data-feelings}Search by similarity evaluation -
+		raw data (feelings)}
+	\end{center}
+\end{table} 
+
+
+%Cultural
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Cultural}} \\
+		\hline \hline
+			Application identifier & Application description & Tags \\
+			\hline \hline
+			admin@astra:go\_sightseeing & go sightseeing in our city & tourism, cultural,
+			guide, museum\\
+			\hline
+			admin@astra:museum & go to a museum & paintings, history, cultural, tourism\\
+			\hline
+			admin@astra:photography\_exposition & going to that new photography
+			exposition & pics, cultural, sightseeing, camera\\
+			\hline
+			admin@astra:concert & go to a live music concert & music, fun, social, rock\\
+			\hline
+			admin@astra:cinema & watch a movie in the cinema & movies, social, film,
+			fun\\
+
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-data-cultural}Search by similarity evaluation -
+		raw data (cultural)}
+	\end{center}
+\end{table} 
+
+%Location
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Location}} \\
+		\hline \hline
+			Application identifier & Application description & Tags \\
+			\hline \hline
+			admin@astra:girlfriend\_home & I am at my girlfriend home & busy, home,
+			place, gf\\
+			\hline
+			admin@astra:home & I am at home	& place, home, location, safe\\
+			\hline
+			admin@astra:my\_parents & I am at my parents home & family, mother, father,
+			place\\
+			\hline
+			admin@astra:office & I am at work, in my office & work, job, place, office\\
+			\hline
+			admin@astra:village & I am going to be in my mother village & parents,
+			mother, place, rustic\\
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-data-location}Search by similarity evaluation -
+		raw data (location)}
+	\end{center}
+\end{table} 
+
+Tables \ref{table:testing-results-sport}, \ref{table:testing-results-social},
+\ref{table:testing-results-feelings}, \ref{table:testing-results-cultural} and
+\ref{table:testing-results-location} shows the results returned by the search
+engine ordered by scored (as they are presented to the user).
+The application we compare to was based on similar information
+to the one indicated in \textbf{bold} (``control measure'', see Section 
+\ref{subsec:testing-search-engine}). Applications in \textit{italic} are the
+ones which belong to the same group we are testing (true positives).
+An analysis of these results can be found in Table \ref{table:testing-summary}.
+
+%Sports
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Sports}} \\
+		\hline \hline
+			Application returned & Field & Score \\
+			\hline \hline
+			\textit{\textbf{admin@astra:play\_handball}} & Sport & 2.18\\
+			\hline
+			\textit{admin@astra:play\_basketball\_match}&	Sport	&	1.4	\\	
+			\hline
+			\textit{admin@astra:play\_football}	&	Sport	&	0.64	\\
+			\hline
+			admin@astra:beer	&	Social	&	0.03	\\
+			\hline
+			admin@astra:cinema	&	Cultural	&	0.03	\\
+			\hline
+			admin@astra:concert	&	Cultural	&	0.03	\\
+			\hline
+			admin@astra:dance	&	Social	&	0.03	\\
+			\hline
+			\textit{admin@astra:go\_jogging} &	Sport	&	0.03	\\
+			\hline
+			\textit{admin@astra:go\_to\_the\_gym}	&	Sport	&	0.03	\\
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-results-sport}Search by similarity evaluation
+		- results for group ``Sport''}
+	\end{center}
+\end{table} 
+
+%Social
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Social}} \\
+		\hline \hline
+			Application returned & Field & Score \\
+			\hline \hline
+			\textit{\textbf{admin@astra:beer}}	&	Social	&	2.21	\\
+			\hline
+			\textit{admin@astra:dance}	&	Social	&	0.99	\\
+			\hline
+			\textit{admin@astra:coffee}	&	Social	&	0.19	\\
+			\hline
+			\textit{admin@astra:tapas}	&	Social	&	0.18	\\
+			\hline
+			\textit{admin@astra:romantic\_dinner}	&	Social	&	0.15	\\
+			\hline
+			admin@astra:cinema	&	Cultural	&	0.08	\\
+			\hline
+			admin@astra:concert	&	Cultural	&	0.08	\\
+			\hline			
+			admin@astra:play\_handball	&	Sport	&	0.02	\\
+			\hline
+			admin@astra:photography\_exposition	&	Cultural	&	0.02	\\
+			\hline
+			admin@astra:village	&	Location	&	0.01	\\
+
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-results-social}Search by similarity evaluation
+		- results for group ``Social''}
+	\end{center}
+\end{table} 
+
+
+%Feelings
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Feelings}} \\
+		\hline \hline
+			Application returned & Field & Score \\
+			\hline \hline
+			
+			\textit{\textbf{admin@astra:thinking\_of\_you}}	&	Feelings	&	2.4	\\
+			\hline
+			\textit{admin@astra:missing\_you}	&	Feelings	&	0.92	\\
+			\hline
+			\textit{admin@astra:happy}	&	Feelings	&	0.34	\\
+			\hline
+			\textit{admin@astra:hating\_you}	&	Feelings	&	0.3	\\
+			\hline
+			\textit{admin@astra:sad}	&	Feelings	&	0.23	\\
+			\hline
+			admin@astra:home	&	Location	&	0.08	\\
+			\hline
+			admin@astra:girlfriend\_home	&	Location	&	0.07	\\
+			\hline
+			admin@astra:my\_parents	&	Location	&	0.07	\\
+			\hline
+			admin@astra:office	&	Location	&	0.07	\\
+			\hline
+			admin@astra:village	&	Location	&	0.06	\\
+
+
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-results-feelings}Search by similarity evaluation
+		- results for group ``Feelings''}
+	\end{center}
+\end{table} 
+
+%Cultural
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Cultural}} \\
+		\hline \hline
+			Application returned & Field & Score \\
+			\hline \hline
+
+			\textit{\textbf{admin@astra:museum}}	&	Cultural	&	1.68	\\
+			\hline
+			\textit{admin@astra:go\_sightseeing}	&	Cultural	&	0.91	\\
+			\hline
+			\textit{admin@astra:photography\_exposition}	&	Cultural	&	0.05	\\
+			\hline
+			\textit{admin@astra:concert}	&	Cultural	&	0.03	\\
+			\hline
+			admin@astra:go\_jogging	&	Sport	&	0.03	\\
+			\hline
+			admin@astra:go\_to\_the\_gym	&	Sport	&	0.03	\\
+			\hline
+			admin@astra:tapas	&	Social	&	0.02	\\
+
+
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-results-cultural}Search by similarity evaluation
+		- results for group ``Cultural''}
+	\end{center}
+\end{table} 
+
+%Location
+\begin{table}[h!]
+	\tiny
+    \begin{center}
+		\begin{tabular}{||l|l|l||}
+
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{Location}} \\
+		\hline \hline
+			Application returned & Field & Score \\
+			\hline \hline
+			
+			\textit{\textbf{admin@astra:home}}	&	Location	&	2.88	\\
+			\hline
+			\textit{admin@astra:girlfriend\_home}	&	Location	&	1.28	\\
+			\hline
+			\textit{admin@astra:my\_parents}	&	Location	&	0.73	\\
+			\hline
+			\textit{admin@astra:office}	&	Location	&	0.2	\\
+			\hline
+			\textit{admin@astra:village}	&	Location	&	0.19	\\
+			\hline
+			admin@astra:happy	&	Feelings	&	0.08	\\
+			\hline
+			admin@astra:hating\_you	&	Feelings	&	0.07	\\
+			\hline
+			admin@astra:thinking\_of\_you	&	Feelings	&	0.07	\\
+			\hline
+			admin@astra:missing\_you	&	Feelings	&	0.06	\\
+			\hline
+			admin@astra:sad	&	Feelings	&	0.02	\\
+
+		\hline \hline
+
+		\end{tabular}
+		\caption{\label{table:testing-results-location}Search by similarity evaluation
+		- results for group ``Location''}
+	\end{center}
+\end{table} 
+
+
+

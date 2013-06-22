@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Bundle-ClassPath: ., lib/axis.jar, lib/commons-discovery-0.2.jar, lib/
+ jaxrpc.jar, lib/saaj.jar, lib/wsdl4j-1.5.1.jar, lib/commons-logging-1
+ .0.4.jar
+Bundle-Version: 2.0.0
+Bundle-Name: UserManagerProxy
+Bundle-ManifestVersion: 2
+Bundle-Activator: eu.ist.astra.user.proxy.Activator
+Bundle-SymbolicName: UserManagerProxy
+Import-Package: eu.ist.astra.user,eu.ist.astra.user.impl,org.osgi.fram
+ ework
+Build-Date: Tue Aug 18 20:01:26 CEST 2009
+

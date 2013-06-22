@@ -1,0 +1,79 @@
+\chapter{Conclusions}
+\label{chap:conclusions}
+This chapter concludes the report discussing briefly the fulfillment of the
+objectives and discussing my personal contribution to ASTRA. Some
+suggestions about future work are also included, as well as a personal evaluation.
+
+
+\section{Achieved goals}
+\label{sec:goals}
+
+In this report we have detailed the process carried on to develop and integrate
+a set of bundles to manage awareness applications into ASTRA, including
+functionalities for sharing, tagging, locating, appropriating and adapting the
+applications. A new GUI to access this functionalities has also been
+developed, demonstrating the flexibility of the ASTRA SOA (see Section 
+\ref{subsubsec:tech-astra-soa}). All the work has been carried on stressing its
+extensibility, so new functionalities can be easily added in the future as we
+will see in Section \ref{sec:future-work}. Therefore, we can conclude we have 
+successfully fulfilled all the goals stated in Chapter \ref{chap:objectives}.
+
+\section{Contribution}
+\label{sec:contribution}
+In this section we will discuss briefly my contribution to ASTRA, including
+also time references.
+
+I started my contribution to ASTRA as part of my summer job for the IDI
+(Institutt for Datateknikk og Informasjonsvitenskap) at NTNU during
+the summer of 2008 (July-September). In this period I participated in the
+analysis, design, implementation and testing of the first version of 
+\verb|RepositoryManager|, \verb|TagManagerBackend| and \verb|TagManagerNode|.
+During this term, I was working in close cooperation with another member of the
+NTNU ASTRA team, and we followed a extreme-programming model (see Section 
+\ref{section:methodology-spiral}). The work performed during this period made 
+up iterations 1 and 2 (see Table \ref{table:iterations}).
+
+I resumed my collaboration with ASTRA project in February 2009. During this
+period I worked in the analysis, design, implementation and testing of\\
+\verb|ApplicationManager| and in the extension of the functionalities of
+other bundles: including search capabilities in \verb|RepositoryManager| and
+the addition of new functionalities in \verb|TagManagerBackend| and
+\verb|TagManagerNode|, etc. This made up iterations 3 and 4 (see Table
+\ref{table:iterations}). Most of the work was developed during my stay in
+Madrid, and I coordinated using the mechanisms explained in Section
+\ref{sec:coordination}. I also had the opportunity to come back to Norway to
+work in ASTRA during one month and a half during the summer, which was
+extremely useful to elicit and implement the last requirements and conclude 
+successfully the project.
+
+
+\section{Future work}
+\label{sec:future-work}
+In this section we present a set of possible enhancements for this project:
+
+\begin{itemize}
+  \item The parameters for the searching by similarity process can be adjusted
+  to increase its recall and precision once an evaluation process similar to
+  the one explained in Section \ref{subsec:testing-search-engine} with real
+  user data is carried on.
+  \item The use of ontologies for helping in the application adaptation process
+  can be included once the implementation of the necessary methods in the\\
+  \verb|OntologyManager| is finished. \verb|ApplicationManager| is already
+  prepared to make use of its services.
+  \item An extension of the GUI could be performed, adding the possibility of
+  publishing applications, join communities, rules edition, etc.
+  \item New browsing methods (by owner, by tags, etc.) could be developed, to
+  allow the user localize applications in new ways.
+\end{itemize} 
+
+
+\section{Personal evaluation}
+My work for ASTRA has been one of the most enriching experiences of my
+career. I have had the opportunity to work in a real researching project and
+to collaborate with teams from several countries. It has also been really
+enriching in technological terms, since I have increased my knowledge about all
+the technologies discussed in Chapter \ref{chap:methodology}.
+It has been really important in personal terms as well, since this experience
+allowed me to discover my passion for researching.
+Therefore, I will always be grateful for having had the opportunity to 
+be part of this project.

@@ -1,0 +1,11 @@
+java.net.MalformedURLException: no protocol: log/log_all-2.0.1
+	at java.net.URL.<init>(URL.java:567)
+	at java.net.URL.<init>(URL.java:464)
+	at java.net.URL.<init>(URL.java:413)
+	at org.knopflerfish.framework.Bundles.install0(Bundles.java:108)
+	at org.knopflerfish.framework.PermissionOps.callInstall0(PermissionOps.java:249)
+	at org.knopflerfish.framework.Bundles.install(Bundles.java:93)
+	at org.knopflerfish.framework.Framework.installBundle(Framework.java:488)
+	at org.knopflerfish.framework.Main.handleArgs(Main.java:274)
+	at org.knopflerfish.framework.Main.main(Main.java:192)
+Error: Command "-istart log/log_all-2.0.1" failed, Failed to install bundle: java.net.MalformedURLException: no protocol: log/log_all-2.0.1

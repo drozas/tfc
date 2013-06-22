@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RULES>
+	<RULE>
+		<CONDITION>
+			<TYPE>Awareness</TYPE>
+			<NAME>Available</NAME>
+			<COMPARISON_OPERATOR>EQ</COMPARISON_OPERATOR>
+			<VALUE>true</VALUE>
+		</CONDITION>
+		<RESULT>
+			<TYPE>InvokeMessage</TYPE>
+			<NAME>alice@astra:football</NAME>
+			<COMPARISON_OPERATOR>EQ</COMPARISON_OPERATOR>
+			<VALUE>true</VALUE>
+		</RESULT>
+		<RULE_NAME>alice@astra:football_0</RULE_NAME>
+	</RULE>
+</RULES>

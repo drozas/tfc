@@ -1,0 +1,101 @@
+\chapter{Bundles manifests}
+\label{appendix:manifests}
+\phantomsection 
+
+In this appendix we list the manifests of the bundles developed for this
+project. The meaning of the most relevant attributes is explained in Section
+\ref{subsec:creating-bundles}.
+
+\section{RepositoryManager's manifest}
+
+\begin{verbatim}
+
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.rm,eu.ist.astra.rm.impl
+Bundle-Vendor: IST ASTRA
+Bundle-ClassPath: ., lib/lucene-2_4_1_svn.jar
+Bundle-Version: 2.0.0
+Bundle-Name: RepositoryManager
+Bundle-Activator: eu.ist.astra.rm.impl.Activator
+Bundle-Description: Repository Manager bundle which manages the sharing
+process in the back-end
+Import-Package: 
+	org.osgi.framework, 
+	eu.ist.astra.persistency, 
+	eu.ist.astra.cm, eu.ist.astra.tmbe, 
+	eu.ist.astra.em, eu.ist.astra.em.events, 
+	javax.xml.parsers;resolution:=optional, 
+	javax.xml.transform;resolution:=optional, 
+	javax.xml.transform.dom;resolution:=optional, 
+	javax.xml.transform.stream;resolution:=optional, 
+	org.w3c.dom;resolution:=optional
+Bundle-SymbolicName: RepositoryManager
+
+\end{verbatim}
+
+\section{TagManagerBackEnd's manifest}
+
+\begin{verbatim}
+
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.tmbe
+Bundle-Vendor: Astra
+Bundle-ClassPath: .
+Bundle-Version: 2.0.0
+Bundle-Name: TagManagerBackEnd
+Bundle-Activator: eu.ist.astra.tmbe.impl.Activator
+Bundle-SymbolicName: TagManagerBackEnd
+Import-Package: 
+	org.osgi.framework, 
+	eu.ist.astra.persistency, 
+	eu.ist.astra.cm, eu.ist.astra.em, 
+	eu.ist.astra.em.events
+Bundle-ManifestVersion: 2
+
+
+
+\end{verbatim}
+
+\section{TagManagerNode's manifest}
+
+\begin{verbatim}
+
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.tmn
+Bundle-Vendor: Astra
+Bundle-ClassPath: .
+Bundle-Version: 2.0.0
+Bundle-Name: TagManagerNode
+Bundle-Activator: eu.ist.astra.tmn.impl.Activator
+Bundle-SymbolicName: TagManagerNode
+Import-Package: 
+	org.osgi.framework, 
+	eu.ist.astra.persistency
+
+\end{verbatim}
+
+\section{ApplicationManager's manifest}
+
+\begin{verbatim}
+
+Manifest-Version: 1.0
+Bundle-Vendor: ASTRA
+Bundle-ClassPath: ., lib/grouplayout.jar
+Bundle-Version: 2.0.0
+Bundle-Name: ApplicationManager
+Bundle-Activator: eu.ist.astra.am.Activator
+Bundle-SymbolicName: ApplicationManager
+Import-Package: 
+	org.osgi.framework, 
+	eu.ist.astra.aam, eu.ist.astra.rfm,
+	eu.ist.astra.rfm.proxies, eu.ist.astra.ontologymanager.api, 
+	eu.ist.astra.tmn,
+	eu.ist.astra.awarenessmanager, 
+	javax.swing;resolution:=optional,
+	javax.swing.event;resolution:=optional, 
+	javax.swing.table;resolution:=optional,
+	javax.swing.text;resolution:=optional, 
+	javax.swing.text.html;resolution:=optional, 
+	javax.swing.tree;resolution:=optional
+
+\end{verbatim}

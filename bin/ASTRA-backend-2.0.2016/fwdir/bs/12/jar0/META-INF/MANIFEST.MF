@@ -1,0 +1,13 @@
+Manifest-Version: 1.0
+Export-Package: eu.ist.astra.cm.impl, eu.ist.astra.cm.event.impl
+Bundle-ClassPath: ., lib/axis.jar, lib/commons-discovery-0.2.jar, lib/
+ jaxrpc.jar, lib/saaj.jar, lib/wsdl4j-1.5.1.jar
+Bundle-Version: 2.0.0
+Bundle-Name: CommunityManager
+Bundle-ManifestVersion: 2
+Bundle-Activator: eu.ist.astra.cm.impl.Activator
+Bundle-SymbolicName: CommunityManager
+Import-Package: org.osgi.framework, eu.ist.astra.persistency, eu.ist.a
+ stra.cm, eu.ist.astra.cm.event, org.apache.commons.logging
+Build-Date: Tue Aug 18 20:00:48 CEST 2009
+

@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+	<classpathentry excluding="**/.svn/**|**/CVS/**" including="**/*.java" kind="src" path="src"/>
+	<classpathentry kind="con" path="org.knopflerfish.eclipse.core.EXECUTION_ENVIRONMENT_CONTAINER"/>
+	<classpathentry kind="con" path="org.knopflerfish.eclipse.core.FRAMEWORK_CONTAINER">
+		<attributes>
+			<attribute name="org.osgi.framework" value="0.0.0"/>
+		</attributes>
+	</classpathentry>
+	<classpathentry combineaccessrules="false" kind="src" path="/CommunityManager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/PersistencyManager"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/CommunityManagerAPI"/>
+	<classpathentry kind="lib" path="lib/lucene-2_4_1_svn.jar"/>
+	<classpathentry combineaccessrules="false" kind="src" path="/TagManagerBackEnd"/>
+	<classpathentry kind="src" path="/EventsManager"/>
+	<classpathentry kind="output" path="out"/>
+</classpath>

@@ -1,0 +1,54 @@
+#
+# Generated from template.xargs
+# Knopflerfish release 2.0.1
+#
+# The latest information about the configuration can be found at: http://www.astra-project.net/wiki/ConfigurationForNode
+# load common properties
+-xargs props.xargs
+
+# Prefix for searching for bundle URLs from console or command line
+-Dorg.knopflerfish.gosg.jars=file:ASTRA/
+#drozas&alfredo: We have a latest version of Astra-Back-End process running on astra.perseum.com:8080
+#You may want to change this parameter to refer to another server (ex.: if you want to debug the application locally) 
+-Deu.ist.astra.cm.proxy.endpoint=http://localhost:8080/axis/services/CommunityManager
+-Deu.ist.astra.BackEndAddress=http://localhost:8080/
+
+-Deu.ist.astra.default.user=john@astra
+
+-init
+
+
+
+#extra Initializations for ASTRA
+-istart jsdk/jsdk-2.2.jar
+-istart cm/cm_all-2.0.0.jar
+#-istart comm-win32/comm-win32_all-2.0.0.jar
+-istart commons-logging/commons-logging_all-2.0.0.jar
+-istart http/http_all-2.0.0.jar
+-istart axis-osgi/axis-osgi_all-0.1.0.jar
+-istart jena_bundle.jar
+
+#-istart upnp/device_all-2.0.0.jar
+#-istart upnp/log_all-2.0.0.jar
+#-istart upnp/upnp_api-2.0.0.jar
+#-istart upnp/upnpbasedriver-3.0.2-bin.jar
+#-istart upnp/upnpbaseextra-1.0.0-bin.jar
+
+-istart RemoteFrameworkManager-2.0.0.jar
+-istart EventsManager-2.0.0.jar
+-istart OntologyManager-2.0.0.jar
+-istart PersistencyManager-2.0.0.jar
+-istart CommunityManagerAPI-2.0.0.jar
+-istart CommunityManagerProxy-2.0.0.jar
+-istart UserManagerProxy-2.0.0.jar
+-istart UserManagerAPI-2.0.0.jar
+-istart AwarenessManager-2.0.0.jar
+-istart AwarenessApplicationManager-2.0.0.jar
+-istart ServiceProxyManager-2.0.0.jar
+-istart UPnPServiceProxy-2.0.0.jar
+-istart ContextManager-2.0.0.jar
+-istart TagManagerNode-2.0.0.jar
+#-istart ASTRATester-2.0.0.jar
+-istart ApplicationManager-2.0.0.jar
+
+-launch

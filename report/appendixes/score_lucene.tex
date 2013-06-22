@@ -1,0 +1,81 @@
+\chapter{Document scoring in Lucene}
+\label{appendix:score-lucene}
+\phantomsection 
+
+In this section we will explain the scoring process employed in our search
+engine. We use the class \verb|org.apache.lucene.search.DefaultSimilarity|
+provided by the Lucene library. 
+This explanation is based on \cite{lucene-scoring-explanation} and
+\cite{lucene-scoring-formula}.
+
+Lucene scoring uses a combination of the Vector Space Model (VSM) of
+Information Retrieval and the Boolean model to determine how relevant a given 
+Document is to a User's query. In general, the idea behind the VSM is the more 
+times a query term appears in a document relative to the number of times the
+term  appears in all the documents in the collection, the more relevant that 
+document is to the query. It uses the Boolean model to first narrow down the 
+documents that need to be scored based on the use of boolean logic in the Query
+specification. Lucene also adds some capabilities and refinements onto this
+model to support boolean and fuzzy searching, but it essentially remains a VSM 
+based system at the heart.
+
+The score for a query \emph{q} in a document \emph{d} is computed as follows:
+
+\[
+score(q,d) =  coord(q,d) * queryNorm(q)  * \sum_{t\phantom{i}in\phantom{i}
+q}(tf(t\phantom{i}in\phantom{i}d) * idf(t)^2 * t.getBoost() * norm(t,d))
+\]
+
+where
+\begin{itemize}
+  \item \emph{tf(t in d)} correlates to the term's frequency, defined as the
+  number of times term \emph{t} appears in the currently scored document
+  \emph{d}. Documents that have more occurrences of a given term receive a
+  higher score. The default computation for \emph{tf(t in d)} in
+  \verb|DefaultSimilarity| is: \[ tf(t\phantom{i}in\phantom{i}d) =
+  frequency^{1/2}\]
+  \item \emph{idf(t)} stands for Inverse Document Frequency. This value
+  correlates to the inverse of \emph{docFreq} (the number of documents in which
+  the term \emph{t} appears). This means rarer terms give higher contribution to
+  the total score. The default computation for \emph{idf(t}) in
+  \verb|DefaultSimilarity| is: \[ idf(t)= 1 + \log (numdocs/(docFreq + 1)) \]
+  \item \emph{coord(q,d)} is a score factor based on how many of the query  
+  terms are found in the specified document. Typically, a document that
+  contains more of the query's terms will receive a higher score than another 
+  document with fewer query terms. This is a search time factor computed
+  at search time.
+  \item \emph{queryNorm(q)} is a normalizing factor used to make scores between
+  queries comparable. This factor does not affect document ranking (since all 
+  ranked documents are multiplied by the same factor), but rather just attempts
+  to make scores from different queries (or even different indexes) comparable.
+  This is a search time factor computed at search time. The default computation
+  in \verb|DefaultSimilarity| is: \[ queryNorm(q)= 1 /sumOfSquareWeights^{1/2}\]
+  \\ The sum of squared weights (of the query terms) is computed by the query
+  \verb|Weight object|. For example, a boolean query  computes this value as: \[
+  sumOfSquareWeights= q.getBoost()^2 *  \sum_{t\phantom{i}in\phantom{i}
+q}((idf(t) * t.getBoost())^2)\]
+  \item \emph{t.getBoost()} is a search time boost of term \emph{t} in the query
+   \emph{q} as specified in the query text.
+  \item \emph{norm(t,d)} encapsulates a few (indexing time) boost and length
+  factors:
+  		\begin{itemize}
+            \item \emph{Document boost}, set by calling \verb|doc.setBoost()| 
+            before adding the document to the index. 
+            \item \emph{Field boost}, set by calling \verb|field.setBoost()|
+            before adding the field to a document. 
+            \item \emph{lengthNorm(field)}, computed when the document is added
+            to the index in accordance with the number of tokens of this field
+            in the document, so that shorter fields contribute more to the score. 
+            \emph{LengthNorm} is computed by the \verb|Similarity| class in
+            effect at indexing.
+          \end{itemize}
+   When a document is added to the index, all the above factors are
+   multiplied. If the document has multiple fields with the same name, all
+   their boosts are multiplied together: \[
+  norm(t,d)= doc.getBoost() * 
+  lengthNorm(field) * \prod_{field\phantom{i}in\phantom{i}
+  d\phantom{i}named\phantom{i}as\phantom{i}t}(f.getBoost()) \]
+\end{itemize}
+
+
+

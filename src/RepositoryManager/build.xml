@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- WARNING: Eclipse auto-generated file.
+              Any modifications will be overwritten.
+              To include a user specific buildfile here, simply create one in the same
+              directory with the processing instruction <?eclipse.ant.import?>
+              as the first entry and export the buildfile again. -->
+<project basedir="." default="build" name="RepositoryManager">
+    <property environment="env"/>
+    <property name="PersistencyManager.location" value="../PersistencyManager"/>
+    <property name="CommunityManager.location" value="../CommunityManager"/>
+    <property name="debuglevel" value="source,lines,vars"/>
+    <property name="target" value="1.6"/>
+    <property name="source" value="1.6"/>
+    <import file="build.wsdl.xml"/>
+	<path id="Execution Environment [Default JRE].libraryclasspath">
+	        <pathelement location="${env.JAVA_HOME}/lib/resources.jar"/>
+	        <pathelement location="${env.JAVA_HOME}/lib/rt.jar"/>
+	        <pathelement location="${env.JAVA_HOME}/lib/jsse.jar"/>
+	        <pathelement location="${env.JAVA_HOME}/lib/jce.jar"/>
+	        <pathelement location="${env.JAVA_HOME}/lib/ext/dnsns.jar"/>
+	        <pathelement location="${env.JAVA_HOME}/lib/ext/sunjce_provider.jar"/>
+	        <pathelement location="${env.JAVA_HOME}/lib/ext/sunmscapi.jar"/>
+	        <pathelement location="${env.JAVA_HOME}/lib/ext/sunpkcs11.jar"/>
+	</path>
+    <path id="Framework [Knopflerfish].libraryclasspath">
+        <pathelement location="../knopflerfish/knopflerfish.org/osgi/framework.jar"/>
+    </path>
+    <path id="PersistencyManager.classpath">
+        <pathelement location="${PersistencyManager.location}/out"/>
+        <path refid="Execution Environment [Default JRE].libraryclasspath"/>
+        <path refid="Framework [Knopflerfish].libraryclasspath"/>
+        <pathelement location="${PersistencyManager.location}/resources/mysql-connector-java-5.0.4-bin.jar"/>
+    </path>
+    <path id="CommunityManager.classpath">
+        <pathelement location="${CommunityManager.location}/out"/>
+        <path refid="Execution Environment [Default JRE].libraryclasspath"/>
+        <path refid="Framework [Knopflerfish].libraryclasspath"/>
+        <path refid="PersistencyManager.classpath"/>
+        <pathelement location="${CommunityManager.location}/lib/UC_CIManager0.1.jar"/>
+        <pathelement location="${CommunityManager.location}/lib/dom4j-1.6.1.jar"/>
+        <pathelement location="${CommunityManager.location}/lib/axis.jar"/>
+        <pathelement location="${CommunityManager.location}/lib/commons-discovery-0.2.jar"/>
+        <pathelement location="${CommunityManager.location}/lib/commons-logging-1.0.4.jar"/>
+        <pathelement location="${CommunityManager.location}/lib/jaxrpc.jar"/>
+        <pathelement location="${CommunityManager.location}/lib/framework.jar"/>
+        <pathelement location="${CommunityManager.location}/lib/wsdl4j-1.5.1.jar"/>
+        <pathelement location="${CommunityManager.location}/lib/saaj.jar"/>
+    </path>
+    <path id="RepositoryManager.classpath">
+        <pathelement location="out"/>
+        <path refid="Execution Environment [Default JRE].libraryclasspath"/>
+        <path refid="Framework [Knopflerfish].libraryclasspath"/>
+        <path refid="CommunityManager.classpath"/>
+        <path refid="PersistencyManager.classpath"/>
+    </path>
+    <target name="init">
+        <mkdir dir="out"/>
+        <copy includeemptydirs="false" todir="out">
+            <fileset dir="src" excludes="**/*.launch, **/*.java"/>
+        </copy>
+    </target>
+    <target name="clean">
+        <delete dir="out"/>
+    </target>
+    <target depends="clean" name="cleanall">
+        <ant antfile="${PersistencyManager.location}/build.xml" inheritAll="false" target="clean"/>
+        <ant antfile="${CommunityManager.location}/build.xml" inheritAll="false" target="clean"/>
+    </target>
+    <target depends="build-subprojects,build-project" name="build"/>
+    <target name="build-subprojects">
+        <ant antfile="${PersistencyManager.location}/build.xml" inheritAll="false" target="build-project"/>
+        <ant antfile="${CommunityManager.location}/build.xml" inheritAll="false" target="build-project"/>
+    </target>
+    <target depends="init" name="build-project">
+        <echo message="${ant.project.name}: ${ant.file}"/>
+        <javac debug="true" debuglevel="${debuglevel}" destdir="out" source="${source}" target="${target}">
+            <src path="src"/>
+            <include name="**/*.java"/>
+            <exclude name="**/.svn/**"/>
+            <exclude name="**/CVS/**"/>
+            <classpath refid="RepositoryManager.classpath"/>
+        </javac>
+    </target>
+    <target description="Build all projects which reference this project. Useful to propagate changes." name="build-refprojects"/>
+</project>

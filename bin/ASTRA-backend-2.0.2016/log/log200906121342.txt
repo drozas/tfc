@@ -1,0 +1,9 @@
+Knopflerfish OSGi framework, version 4.0.0
+Copyright 2003-2006 Knopflerfish. All Rights Reserved.
+
+See http://www.knopflerfish.org for more information.
+No restart xargs file /home/alfredo/persistent/trabajo/releases/ASTRA-2.0.1592/ASTRA-backend-2.0.1592/restart.xargs, trying /home/alfredo/persistent/trabajo/releases/ASTRA-2.0.1592/ASTRA-backend-2.0.1592/init.xargs instead.
+Loading xargs file /home/alfredo/persistent/trabajo/releases/ASTRA-2.0.1592/ASTRA-backend-2.0.1592/init.xargs
+Loading xargs file /home/alfredo/persistent/trabajo/releases/ASTRA-2.0.1592/ASTRA-backend-2.0.1592/props.xargs
+Removed existing fwdir /home/alfredo/persistent/trabajo/releases/ASTRA-2.0.1592/ASTRA-backend-2.0.1592/fwdir
+Installed and started: file:ASTRA/jsdk/jsdk-2.2.jar (id#1)

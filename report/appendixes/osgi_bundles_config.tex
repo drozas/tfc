@@ -1,0 +1,97 @@
+\chapter{OSGi bundles configuration}
+\label{appendix:osgi-bundles-config}
+\phantomsection 
+
+
+In this appendix we present the configuration files (\verb|xinit.args|)
+necessary to run the bundles in the proper order for the Backend and the Nodes.
+These configuration files are read by the framework on the startup process, so
+it can decides which bundles to start and in which order.
+
+\section{OSGi - Backend configuration}
+
+\begin{verbatim}
+#
+# Generated from template.xargs Knopflerfish release 2.0.1
+# drozas: the latest information about the configuration can
+# be found at: http://www.astra-project.net/wiki/ConfigurationForBackEnd
+#
+# load common properties
+-xargs props.xargs
+
+# Prefix for searching for bundle URLs from console or command line
+-Dorg.knopflerfish.gosg.jars=file:ASTRA/
+#-Deu.ist.astra.cm.proxy.endpoint=
+http://localhost:8080/axis/services/CommunityManager
+
+-init
+
+#extra Initializations for ASTRA
+-istart jsdk/jsdk-2.2.jar
+-istart log/log_all-2.0.1.jar
+-istart cm/cm_all-2.0.0.jar
+-istart commons-logging/commons-logging_all-2.0.0.jar
+-istart http/http_all-2.0.0.jar
+-istart axis-osgi/axis-osgi_all-0.1.0.jar
+
+-istart RemoteFrameworkManager-2.0.0.jar
+-istart EventsManager-2.0.0.jar
+-istart PersistencyManager-2.0.0.jar
+-istart CommunityManagerAPI-2.0.0.jar
+-istart UserManager-2.0.0.jar
+-istart CommunityManager-2.0.0.jar
+-istart AwarenessApplicationManagerBackend-2.0.0.jar
+-istart TagManagerBackEnd-2.0.0.jar
+-istart RepositoryManager-2.0.0.jar
+-launch
+\end{verbatim}
+
+\section{OSGi - Node configuration}
+
+\begin{verbatim}
+#
+# Generated from template.xargs
+# Knopflerfish release 2.0.1
+#
+# drozas: the latest information about the configuration can 
+#be found at: http://www.astra-project.net/wiki/ConfigurationForNode
+# load common properties
+-xargs props.xargs
+
+# Prefix for searching for bundle URLs from console or command line
+-Dorg.knopflerfish.gosg.jars=file:ASTRA/
+#You may want to change this parameter to refer to another server
+-Deu.ist.astra.cm.proxy.endpoint=
+http://localhost:8080/axis/services/CommunityManager
+-Deu.ist.astra.BackEndAddress=http://localhost:8080/
+-Deu.ist.astra.default.user=john@astra
+
+-init
+
+#extra Initializations for ASTRA
+-istart jsdk/jsdk-2.2.jar
+-istart cm/cm_all-2.0.0.jar
+-istart commons-logging/commons-logging_all-2.0.0.jar
+-istart http/http_all-2.0.0.jar
+-istart axis-osgi/axis-osgi_all-0.1.0.jar
+-istart jena_bundle.jar
+
+-istart RemoteFrameworkManager-2.0.0.jar
+-istart EventsManager-2.0.0.jar
+-istart OntologyManager-2.0.0.jar
+-istart PersistencyManager-2.0.0.jar
+-istart CommunityManagerAPI-2.0.0.jar
+-istart CommunityManagerProxy-2.0.0.jar
+-istart UserManagerProxy-2.0.0.jar
+-istart UserManagerAPI-2.0.0.jar
+-istart AwarenessManager-2.0.0.jar
+-istart AwarenessApplicationManager-2.0.0.jar
+-istart ServiceProxyManager-2.0.0.jar
+-istart UPnPServiceProxy-2.0.0.jar
+-istart ContextManager-2.0.0.jar
+-istart TagManagerNode-2.0.0.jar
+#-istart ASTRATester-2.0.0.jar
+-istart ApplicationManager-2.0.0.jar
+
+-launch
+\end{verbatim}

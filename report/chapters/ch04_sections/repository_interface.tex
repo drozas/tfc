@@ -1,0 +1,351 @@
+%%% Tables for repository interface %%%%
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l|l||}
+        
+        %%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{createSharedApplication}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Create a new shared application in the
+		repository.} \\
+		\hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+			userId & String & Identifier of the user who uploads the application. \\
+			appType & String & Type of application. \\
+			appDescription & String & Application description. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if everything is ok, false if
+		there was a failure.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{deleteSharedApplication}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Delete a SharedApplication in the
+		repository.} \\ \hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the application was deleted
+		properly, false otherwise.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{shareInCommunity}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Store relationship between a shared 
+		application and a community.} \\ \hline \hline
+			Parameter & Type & Description \\
+		\hline \hline
+			userId & String & User identifier in the standard format. \\
+			appId & String & Application identifier in the standard ASTRA format. \\
+			communityId & String & Community identifier in the standard format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the operation was successful,
+		false otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{createSharedRule}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Create a new shared rule associated to
+		the application.} \\ \hline \hline Parameter & Type & Description \\
+		\hline \hline
+			userId & String & User identifier in the standard format. \\
+			appId & String & Application identifier in the standard ASTRA format. \\
+			ruleId & String & Rule identifier in the standard format. \\
+			xmlData & String & XML file which contains the rule. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if the operation was successful,
+		false otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		\end{tabular}
+		\caption{\label{table:rm-interface-1} RepositoryManager interface}
+	\end{center}
+\end{table}
+
+
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l|l||}
+
+        %%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{listSharedApplications}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the list of applications in the
+		repository visible for that user.} \\ 
+		\hline \hline 
+		Parameter & Type & Description \\ 
+		\hline \hline
+			userId & String & User identifier in the standard format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, list of applications.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+        
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{listSharedRules}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the list of rules in the
+		repository associated to appID} \\ 
+		\hline \hline 
+		Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, list of rule identifiers.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getXmlData}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the XML file which describes the
+		rule.} \\ \hline \hline 
+		Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+			ruleId & String & Rule identifier in the standard format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String, XML file describing the rule.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getSharedApplicationName}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the name of the application.} \\
+		\hline \hline Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String, application name.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+	
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getSharedApplicationOwner}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the owner of the application.} \\
+		\hline \hline Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String, application owner.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%		
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getSharedApplicationDescription}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the description of the
+		application.} \\ \hline \hline Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String, application description.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%		
+		
+		
+		\end{tabular}
+		\caption{\label{table:rm-interface-2} RepositoryManager interface (II)}
+	\end{center}
+\end{table}
+
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l|l||}
+        
+
+        
+        %%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getSharedApplicationDate}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the date of the
+		application.} \\ \hline \hline Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String, application date.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%			
+        
+	
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getSharedApplicationType}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the type of the
+		application.} \\ \hline \hline Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String, application type.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%	
+		
+				%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{isAlreadyShared}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Checks if an application has already been
+		shared.} \\ \hline \hline Parameter & Type & Description \\ \hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: Boolean, true if already exists, false
+		otherwise.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%	
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getXmlRuleDescription}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns a description of the rule in a
+		readable} \\ 
+		\multicolumn{3}{||l||}{way using the XML file information.} \\ 
+		
+		\hline \hline 
+		Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+			ruleId & String & Rule identifier in the standard format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String, description of the rule.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{getXmlRule}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: Returns the XML file which describes the
+		rule with} \\ 
+		\multicolumn{3}{||l||}{the ownership already modified.} \\ 
+		
+		\hline \hline 
+		Parameter & Type & Description \\ 
+		\hline \hline
+			appId & String & Application identifier in the standard ASTRA format. \\
+			ruleId & String & Rule identifier in the standard format. \\
+			newUserId & String & New user identifier in the standard format. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String, XML file associated to the rule.} \\
+		\hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+
+		
+
+		
+		\end{tabular}
+		\caption{\label{table:rm-interface-3} RepositoryManager interface (III)}
+	\end{center}
+\end{table}
+
+% \begin{table}[h!]
+% 	\small
+%     \begin{center}
+% 		\begin{tabular}{||r|l|l||}
+% 		
+% 
+% 	
+% 		\end{tabular}
+% 		\caption{\label{table:rm-interface-4} Repository Manager interface (IV)}
+% 	\end{center}
+% \end{table}
+
+
+\begin{table}[h!]
+	\small
+    \begin{center}
+		\begin{tabular}{||r|l|l||}
+		
+				%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{search (overloaded)}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: It performs a search according to one
+		criterion.} \\ \hline \hline Parameter & Type & Description \\ 
+		\hline \hline
+			userId & String & Identifier of the user who is performing the search.\\
+			q & String & Query. \\
+			criterion & String & Criterion to use. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, with the identifiers of the
+		matching applications.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+	
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{search (overloaded)}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: It performs a search according to a set
+		of criteria.} \\ \hline \hline Parameter & Type & Description \\ 
+		\hline \hline
+			userId & String & Identifier of the user who is performing the search.\\
+			q & String & Query. \\
+			criteria & String array & Criteria to use. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, with the identifiers of the
+		matching applications.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		%%%TO-DO: THIS ONE MAY CHANGE AFTER THE TESTS!!!
+		%%%%%%%% Begin method %%%%%%%%%%%%%%%%%%
+		\hline \hline
+		\multicolumn{3}{||c||}{\bfseries{searchBySimilarity}} \\
+		\hline
+		\hline 
+		\multicolumn{3}{||l||}{Description: It performs a search of similar
+		applications.} \\ \hline \hline Parameter & Type & Description \\ \hline
+		\hline userId & String & Identifier of the user who is performing the
+		search.\\ 
+		appId & String & Application identifier in the standard ASTRA format. \\
+			appDescription & String & Application description. \\
+		\hline \hline
+		\multicolumn{3}{||l||}{Returns: String array, with the identifiers of the
+		matching applications.} \\ \hline \hline
+		%%%%%%%%%%%% End method %%%%%%%%%%%%%%%%%%%%%%
+		
+		\end{tabular}
+		\caption{\label{table:rm-interface-4} RepositoryManager interface (IV)}
+	\end{center}
+\end{table}

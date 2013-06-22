@@ -1,0 +1,90 @@
+\begin{thebibliography}{{Apa}08b}
+
+\bibitem[{Apa}08a]{lucene-scoring-formula}
+{Apache Lucene Team}.
+\newblock Formula for scoring in lucene.
+\newblock {\em
+  http://lucene.apache.org/java/240/api/org/apache/lucene/search/Similarity.ht%
+ml}, 2008.
+
+\bibitem[{Apa}08b]{lucene-scoring-explanation}
+{Apache Lucene Team}.
+\newblock Understanding scoring in lucene.
+\newblock {\em http://lucene.apache.org/java/240/scoring.html}, 2008.
+
+\bibitem[{Bar}09]{osgi09}
+{Bartlett, Neil}.
+\newblock {\em OSGi in practice}.
+\newblock CC-E-books, 2009.
+
+\bibitem[Bo01]{agile-manifesto}
+{Beedle, Mike} {Beck, Kevin} and {others}.
+\newblock The agile manifesto.
+\newblock {\em http://agilemanifesto.org/}, 2001.
+
+\bibitem[BP09]{astra-soa-white-paper}
+{Calemis, Ioannis} {Berg, Erik} and {P\'{e}rez, Alfredo}.
+\newblock Astra soa white paper.
+\newblock {\em http://www.astra-project.net}, 2009.
+
+\bibitem[CM07]{astra02}
+{Calemis, Ioannis} and {Mavrommati, Irene}.
+\newblock Preliminary requirements and approach for tools that configure
+  pervasive awareness applications: the astra case.
+\newblock {\em http://www.astra-project.net}, 2007.
+
+\bibitem[{Con}06]{astra01}
+{Conradi, Reinard}.
+\newblock Astra: Awareness services and systems - towards theory and
+  realization.
+\newblock {\em http://www.idi.ntnu.no/grupper/su/astra.html}, 2006.
+
+\bibitem[DC09]{astra-repo}
+{P\'{e}rez, Alfredo} {Divitini, Monica} and {Cassens, J\"{o}rg}.
+\newblock Design and evaluation of a repository for sharing pervasive awareness
+  applications.
+\newblock {\em http://www.astra-project.net}, 2009.
+
+\bibitem[GM05]{interfaces05}
+{Gallego, Micael} and {Montalvo, Soto}.
+\newblock {\em Interfaces gr\'{a}ficas en Java}.
+\newblock Centro de estudios Ram\'{o}n Areces, 2005.
+
+\bibitem[{Hai}04]{osgi-tutorial}
+{Haiges, Sven}.
+\newblock Osgi tutorial.
+\newblock {\em http://www.knopflerfish.org/tutorials/}, 2004.
+
+\bibitem[{Le }02]{w3c-soap-spec}
+{Le H\'{e}garet, Philippe}.
+\newblock The w3c document object model (dom).
+\newblock {\em W3C}, 2002.
+
+\bibitem[{Lyb}07]{mvc-java}
+{Lybarger, Rob}.
+\newblock Mvc in a java/swing application.
+\newblock {\em http://www.developer.com/design/article.php/3678856}, 2007.
+
+\bibitem[{McC}08]{soa-principles}
+{McCabe, Francis G.}
+\newblock Reference architecture for service oriented architecture.
+\newblock {\em http://docs.oasis-open.org/}, 2008.
+
+\bibitem[PS07]{interaction07}
+{Rogers, Yvonne} {Preece, Jenhy} and {Sharp, Helen}.
+\newblock {\em Interaction design: beyond human-computer interaction (2nd
+  edition)}.
+\newblock Wiley, 2007.
+
+\bibitem[{San}05]{agile-paper}
+{Sanjay, Addicam V.}
+\newblock Overview of agile management and development methods.
+\newblock {\em The PROJECT PERFECT White Paper Collection}, 2005.
+
+\bibitem[{Sun}08]{swing-concurrency}
+{Sun Microsystems}.
+\newblock Java tutorials: Concurrency in swing.
+\newblock {\em http://java.sun.com/docs/books/tutorial/uiswing/concurrency/},
+  2008.
+
+\end{thebibliography}
