@@ -1,10 +1,10 @@
 "Development and integration of an awareness applications manager into ASTRA"
 =============================================================================
 
-Author: David Rozas Domingo
-Supervisors: Soto Montalvo (URJC) & Monica Divitini (NTNU)
+- Author: David Rozas Domingo
+- Supervisors: Soto Montalvo (URJC) & Monica Divitini (NTNU)
 
-The latest version of the report can be found at http://davidrozas.com/pub/Rozas2009d.pdf
+- The latest version of the report can be found at http://davidrozas.com/pub/Rozas2009d.pdf
 
 
 CD contents:
