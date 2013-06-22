@@ -1,11 +1,3 @@
- .d888888  .d88888b  d888888P  888888ba   .d888888  
-d8'    88  88.    "'    88     88    `8b d8'    88  
-88aaaaa88a `Y88888b.    88    a88aaaa8P' 88aaaaa88a 
-88     88        `8b    88     88   `8b. 88     88  
-88     88  d8'   .8P    88     88     88 88     88  
-88     88   Y88888P     dP     dP     dP 88     88  
-
-
 "Development and integration of an awareness applications manager into ASTRA"
 =============================================================================
 
