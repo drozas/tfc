@@ -13,6 +13,7 @@ Repository contents:
 - Source code of all the bundles developed for this project in folder src.
 - ASTRA executables (Backend and Node) in folder bin. Revision 2016.
 - Report (pdf + source in Latex) in folder report.
+- Slides (pdf + source in Latex) of the presentation.
 
 Requirements:
 =============
