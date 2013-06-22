@@ -36,7 +36,7 @@ Basic configuration:
 	- bin/ASTRA-node-2.0.2016/init.xargs
 
 - The default configuration is prepared to execute Backend and Node in the localhost.
-- If you just need to run the Node, you can conigure it to use the latest version of the Backend at: http://astra.perseum.com:8080/
+- If you just need to run the Node, you can configure it to use the latest version of the Backend at: http://astra.perseum.com:8080/
 - In that case, you can also use the PHP End User Tools at: http://astra.perseum.com/eut/
 
 Execution (GNU/Linux):
