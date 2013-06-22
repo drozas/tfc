@@ -3,7 +3,6 @@
 
 - Author: David Rozas Domingo
 - Supervisors: Soto Montalvo (URJC) & Monica Divitini (NTNU)
-
 - The latest version of the report can be found at http://davidrozas.com/pub/Rozas2009d.pdf
 
 
@@ -41,8 +40,10 @@ Basic configuration:
 
 Execution (GNU/Linux):
 ======================
+```
 Backend: java -jar bin/ASTRA-backend-2.0.2016/startframework.sh
 Node: java -jar bin/ASTRA-node-2.0.2016/startframework.sh
+```
 
 If you want to execute the Backend in the Background (i.e.: as a cron task) you can use the script:
 bin/ASTRA-backend-2.0.2016/server_startup.sh
@@ -50,9 +51,10 @@ bin/ASTRA-backend-2.0.2016/server_startup.sh
 
 Execution (Windows):
 ====================
+```
 Backend: java -jar bin/ASTRA-backend-2.0.2016/framework.bat
 Node: java -jar bin/ASTRA-node-2.0.2016/framework.bat
-
+```
 
 More information:
 =================
